@@ -1,0 +1,2076 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BlazorWebView
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BlazorWebView
+   ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BlazorWebView.iOS.BlazorWebView">
+  
+  
+  <h1 id="BlazorWebView_iOS_BlazorWebView" data-uid="BlazorWebView.iOS.BlazorWebView" class="text-break">Class BlazorWebView
+  </h1>
+  <div class="markdown level0 summary"><p>An <a class="xref" href="BlazorWebView.IBlazorWebView.html">IBlazorWebView</a> implementation for iOS.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Foundation.NSObject</span></div>
+    <div class="level2"><span class="xref">UIKit.UIResponder</span></div>
+    <div class="level3"><span class="xref">UIKit.UIView</span></div>
+    <div class="level4"><span class="xref">UIKit.UIControl</span></div>
+    <div class="level5"><span class="xref">BlazorWebView</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<span class="xref">Foundation.NSObject</span>&gt;</div>
+    <div><span class="xref">Foundation.INSObjectProtocol</span></div>
+    <div><span class="xref">UIKit.IUIPasteConfigurationSupporting</span></div>
+    <div><span class="xref">UIKit.IUIUserActivityRestoring</span></div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+    <div><span class="xref">Foundation.INSCoding</span></div>
+    <div><span class="xref">UIKit.IUIAccessibilityIdentification</span></div>
+    <div><span class="xref">UIKit.IUIAppearance</span></div>
+    <div><span class="xref">UIKit.IUIAppearanceContainer</span></div>
+    <div><span class="xref">UIKit.IUICoordinateSpace</span></div>
+    <div><span class="xref">UIKit.IUIDynamicItem</span></div>
+    <div><span class="xref">UIKit.IUIFocusItem</span></div>
+    <div><span class="xref">UIKit.IUIFocusEnvironment</span></div>
+    <div><span class="xref">UIKit.IUIFocusItemContainer</span></div>
+    <div><span class="xref">UIKit.IUILargeContentViewerItem</span></div>
+    <div><span class="xref">UIKit.IUITraitEnvironment</span></div>
+    <div><span class="xref">CoreAnimation.ICALayerDelegate</span></div>
+    <div><span class="xref">WebKit.IWKScriptMessageHandler</span></div>
+    <div><span class="xref">ObjCRuntime.INativeObject</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="BlazorWebView.IBlazorWebView.html">IBlazorWebView</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">UIKit.UIControl.AddTarget(System.EventHandler, UIKit.UIControlEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.RemoveTarget(System.EventHandler, UIKit.UIControlEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.AddTarget(Foundation.NSObject, ObjCRuntime.Selector, UIKit.UIControlEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.BeginTracking(UIKit.UITouch, UIKit.UIEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.CancelTracking(UIKit.UIEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.ContinueTracking(UIKit.UITouch, UIKit.UIEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.EndTracking(UIKit.UITouch, UIKit.UIEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.GetActions(Foundation.NSObject, UIKit.UIControlEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.RemoveTarget(Foundation.NSObject, ObjCRuntime.Selector, UIKit.UIControlEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.SendAction(ObjCRuntime.Selector, Foundation.NSObject, UIKit.UIEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.SendActionForControlEvents(UIKit.UIControlEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.GetAppearance&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.AppearanceWhenContainedIn(System.Type[])</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.GetAppearance(UIKit.UITraitCollection)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.GetAppearance(UIKit.UITraitCollection, System.Type[])</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.GetAppearance&lt;T&gt;(UIKit.UITraitCollection)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.GetAppearance&lt;T&gt;(UIKit.UITraitCollection, System.Type[])</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.ClassHandle</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.AllControlEvents</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.AllTargets</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.EffectiveContentHorizontalAlignment</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.Enabled</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.Highlighted</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.HorizontalAlignment</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.Selected</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.State</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.TouchInside</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.Tracking</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.VerticalAlignment</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.Appearance</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.TouchDown</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.TouchDownRepeat</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.TouchDragInside</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.TouchDragOutside</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.TouchDragEnter</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.TouchDragExit</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.TouchUpInside</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.TouchUpOutside</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.TouchCancel</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.ValueChanged</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.PrimaryActionTriggered</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.EditingDidBegin</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.EditingChanged</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.EditingDidEnd</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.EditingDidEndOnExit</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.AllTouchEvents</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.AllEditingEvents</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIControl.AllEvents</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Add(UIKit.UIView)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AddSubviews(UIKit.UIView[])</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.GetEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.BeginAnimations(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Animate(System.Double, System.Action, System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Animate(System.Double, System.Double, UIKit.UIViewAnimationOptions, System.Action, System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Transition(UIKit.UIView, UIKit.UIView, System.Double, UIKit.UIViewAnimationOptions, System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Transition(UIKit.UIView, System.Double, UIKit.UIViewAnimationOptions, System.Action, System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AnimateAsync(System.Double, System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Capture(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityActivate()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ActionForLayer(CoreAnimation.CALayer, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AddConstraint(UIKit.NSLayoutConstraint)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AddConstraints(UIKit.NSLayoutConstraint[])</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AddGestureRecognizer(UIKit.UIGestureRecognizer)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AddInteraction(UIKit.IUIInteraction)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AddKeyframeWithRelativeStartTime(System.Double, System.Double, System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AddLayoutGuide(UIKit.UILayoutGuide)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AddMotionEffect(UIKit.UIMotionEffect)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AddSubview(UIKit.UIView)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AlignmentRectForFrame(CoreGraphics.CGRect)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Animate(System.Double, System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AnimateKeyframes(System.Double, System.Double, UIKit.UIViewKeyframeAnimationOptions, System.Action, UIKit.UICompletionHandler)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AnimateKeyframesAsync(System.Double, System.Double, UIKit.UIViewKeyframeAnimationOptions, System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AnimateNotify(System.Double, System.Action, UIKit.UICompletionHandler)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AnimateNotifyAsync(System.Double, System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AnimateNotify(System.Double, System.Double, UIKit.UIViewAnimationOptions, System.Action, UIKit.UICompletionHandler)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AnimateNotifyAsync(System.Double, System.Double, UIKit.UIViewAnimationOptions, System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AnimateNotify(System.Double, System.Double, System.nfloat, System.nfloat, UIKit.UIViewAnimationOptions, System.Action, UIKit.UICompletionHandler)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AnimateNotifyAsync(System.Double, System.Double, System.nfloat, System.nfloat, UIKit.UIViewAnimationOptions, System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.BeginAnimations(System.String, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.BringSubviewToFront(UIKit.UIView)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.CommitAnimations()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ContentCompressionResistancePriority(UIKit.UILayoutConstraintAxis)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ContentHuggingPriority(UIKit.UILayoutConstraintAxis)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ConvertPointFromCoordinateSpace(CoreGraphics.CGPoint, UIKit.IUICoordinateSpace)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ConvertPointFromView(CoreGraphics.CGPoint, UIKit.UIView)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ConvertPointToCoordinateSpace(CoreGraphics.CGPoint, UIKit.IUICoordinateSpace)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ConvertPointToView(CoreGraphics.CGPoint, UIKit.UIView)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ConvertRectFromCoordinateSpace(CoreGraphics.CGRect, UIKit.IUICoordinateSpace)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ConvertRectFromView(CoreGraphics.CGRect, UIKit.UIView)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ConvertRectToCoordinateSpace(CoreGraphics.CGRect, UIKit.IUICoordinateSpace)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ConvertRectToView(CoreGraphics.CGRect, UIKit.UIView)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.DecodeRestorableState(Foundation.NSCoder)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.DidHintFocusMovement(UIKit.UIFocusMovementHint)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.DidUpdateFocus(UIKit.UIFocusUpdateContext, UIKit.UIFocusAnimationCoordinator)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.DisplayLayer(CoreAnimation.CALayer)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Draw(CoreGraphics.CGRect)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.DrawLayer(CoreAnimation.CALayer, CoreGraphics.CGContext)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.DrawRect(CoreGraphics.CGRect, UIKit.UIViewPrintFormatter)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.DrawViewHierarchy(CoreGraphics.CGRect, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.EncodeRestorableState(Foundation.NSCoder)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.EncodeTo(Foundation.NSCoder)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ExchangeSubview(System.nint, System.nint)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ExerciseAmbiguityInLayout()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.FrameForAlignmentRect(CoreGraphics.CGRect)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.GestureRecognizerShouldBegin(UIKit.UIGestureRecognizer)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.GetConstraintsAffectingLayout(UIKit.UILayoutConstraintAxis)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.GetFocusItems(CoreGraphics.CGRect)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.GetUserInterfaceLayoutDirection(UIKit.UISemanticContentAttribute)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.GetUserInterfaceLayoutDirection(UIKit.UISemanticContentAttribute, UIKit.UIUserInterfaceLayoutDirection)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.HitTest(CoreGraphics.CGPoint, UIKit.UIEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.InsertSubview(UIKit.UIView, System.nint)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.InsertSubviewAbove(UIKit.UIView, UIKit.UIView)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.InsertSubviewBelow(UIKit.UIView, UIKit.UIView)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.InvalidateIntrinsicContentSize()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.IsDescendantOfView(UIKit.UIView)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.LayoutIfNeeded()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.LayoutMarginsDidChange()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.LayoutSublayersOfLayer(CoreAnimation.CALayer)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.LayoutSubviews()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ModifyAnimations(System.nfloat, System.Boolean, System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.MovedToSuperview()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.MovedToWindow()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.NeedsUpdateConstraints()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.PerformSystemAnimation(UIKit.UISystemAnimation, UIKit.UIView[], UIKit.UIViewAnimationOptions, System.Action, UIKit.UICompletionHandler)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.PerformSystemAnimationAsync(UIKit.UISystemAnimation, UIKit.UIView[], UIKit.UIViewAnimationOptions, System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.PerformWithoutAnimation(System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.PointInside(CoreGraphics.CGPoint, UIKit.UIEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.RemoveConstraint(UIKit.NSLayoutConstraint)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.RemoveConstraints(UIKit.NSLayoutConstraint[])</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.RemoveFromSuperview()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.RemoveGestureRecognizer(UIKit.UIGestureRecognizer)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.RemoveInteraction(UIKit.IUIInteraction)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.RemoveLayoutGuide(UIKit.UILayoutGuide)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.RemoveMotionEffect(UIKit.UIMotionEffect)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.RequiresConstraintBasedLayout()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ResizableSnapshotView(CoreGraphics.CGRect, System.Boolean, UIKit.UIEdgeInsets)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SafeAreaInsetsDidChange()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SendSubviewToBack(UIKit.UIView)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetAnimationBeginsFromCurrentState(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetAnimationCurve(UIKit.UIViewAnimationCurve)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetAnimationDelay(System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetAnimationDelegate(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetAnimationDidStopSelector(ObjCRuntime.Selector)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetAnimationDuration(System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetAnimationRepeatAutoreverses(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetAnimationRepeatCount(System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetAnimationStartDate(Foundation.NSDate)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetAnimationTransition(UIKit.UIViewAnimationTransition, UIKit.UIView, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetAnimationWillStartSelector(ObjCRuntime.Selector)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetContentCompressionResistancePriority(System.Single, UIKit.UILayoutConstraintAxis)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetContentHuggingPriority(System.Single, UIKit.UILayoutConstraintAxis)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetNeedsDisplay()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetNeedsDisplayInRect(CoreGraphics.CGRect)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetNeedsFocusUpdate()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetNeedsLayout()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SetNeedsUpdateConstraints()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ShouldUpdateFocus(UIKit.UIFocusUpdateContext)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SizeThatFits(CoreGraphics.CGSize)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SizeToFit()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SnapshotView(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SubviewAdded(UIKit.UIView)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SystemLayoutSizeFittingSize(CoreGraphics.CGSize)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SystemLayoutSizeFittingSize(CoreGraphics.CGSize, System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TintColorDidChange()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitCollectionDidChange(UIKit.UITraitCollection)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TransitionNotify(UIKit.UIView, UIKit.UIView, System.Double, UIKit.UIViewAnimationOptions, UIKit.UICompletionHandler)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TransitionNotifyAsync(UIKit.UIView, UIKit.UIView, System.Double, UIKit.UIViewAnimationOptions)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TransitionNotify(UIKit.UIView, System.Double, UIKit.UIViewAnimationOptions, System.Action, UIKit.UICompletionHandler)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TransitionNotifyAsync(UIKit.UIView, System.Double, UIKit.UIViewAnimationOptions, System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.UpdateConstraints()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.UpdateConstraintsIfNeeded()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.UpdateFocusIfNeeded()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ViewWithTag(System.nint)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.WillDrawLayer(CoreAnimation.CALayer)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.WillMoveToSuperview(UIKit.UIView)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.WillMoveToWindow(UIKit.UIWindow)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.WillRemoveSubview(UIKit.UIView)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityActivationPoint</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityAttributedHint</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityAttributedLabel</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityAttributedUserInputLabels</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityAttributedValue</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityElementsHidden</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityFrame</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityHint</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityIdentifier</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityIgnoresInvertColors</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityLabel</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityLanguage</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityNavigationStyle</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityPath</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityRespondsToUserInteraction</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityTextualContext</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityTraits</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityUserInputLabels</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityValue</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AccessibilityViewIsModal</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AlignmentRectInsets</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Alpha</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AnimationsEnabled</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AutoresizingMask</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AutosizesSubviews</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.BackgroundColor</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.BottomAnchor</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Bounds</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.CanBecomeFocused</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Center</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.CenterXAnchor</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.CenterYAnchor</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ClearsContextBeforeDrawing</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ClipsToBounds</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.CollisionBoundingPath</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.CollisionBoundsType</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Constraints</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ContentMode</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ContentScaleFactor</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ContentStretch</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.CoordinateSpace</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.DirectionalLayoutMargins</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.EffectiveUserInterfaceLayoutDirection</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ExclusiveTouch</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.FirstBaselineAnchor</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.FocusItemContainer</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Focused</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Frame</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.GestureRecognizers</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.HasAmbiguousLayout</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.HeightAnchor</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Hidden</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.InheritedAnimationDuration</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.InsetsLayoutMarginsFromSafeArea</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Interactions</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.IntrinsicContentSize</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.IsAccessibilityElement</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.LargeContentImage</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.LargeContentImageInsets</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.LargeContentTitle</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.LastBaselineAnchor</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Layer</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.LayoutGuides</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.LayoutMargins</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.LayoutMarginsGuide</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.LeadingAnchor</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.LeftAnchor</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.MaskView</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.MotionEffects</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.MultipleTouchEnabled</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Opaque</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.OverrideUserInterfaceStyle</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ParentFocusEnvironment</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.PreferredFocusEnvironments</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.PreferredFocusedView</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.PreservesSuperviewLayoutMargins</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ReadableContentGuide</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.RestorationIdentifier</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.RightAnchor</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SafeAreaInsets</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SafeAreaLayoutGuide</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ScalesLargeContentImage</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SemanticContentAttribute</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ShouldGroupAccessibilityChildren</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ShowsLargeContentViewer</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Subviews</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Superview</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Tag</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TintAdjustmentMode</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TintColor</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TopAnchor</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TrailingAnchor</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitCollection</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Transform</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Transform3D</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TranslatesAutoresizingMaskIntoConstraints</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.UserInteractionEnabled</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ViewForBaselineLayout</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ViewForFirstBaselineLayout</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ViewForLastBaselineLayout</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ViewPrintFormatter</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.WidthAnchor</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.Window</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AnnouncementDidFinishNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AnnouncementNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AssistiveTechnologyKey</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AssistiveTouchStatusDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.BoldTextStatusDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ClosedCaptioningStatusDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.DarkerSystemColorsStatusDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ElementFocusedNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.FocusedElementKey</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.GrayscaleStatusDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.GuidedAccessStatusDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.HearingDevicePairedEarDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.InvertColorsStatusDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.LayoutChangedNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.MonoAudioStatusDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.NoIntrinsicMetric</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.NotificationSwitchControlIdentifier</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.NotificationVoiceOverIdentifier</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.OnOffSwitchLabelsDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.PageScrolledNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.PauseAssistiveTechnologyNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ReduceMotionStatusDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ReduceTransparencyStatusDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ResumeAssistiveTechnologyNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ScreenChangedNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ShakeToUndoDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.ShouldDifferentiateWithoutColorDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SpeakScreenStatusDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SpeakSelectionStatusDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SpeechAttributeIpaNotation</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SpeechAttributeLanguage</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SpeechAttributePitch</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SpeechAttributePunctuation</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SpeechAttributeQueueAnnouncement</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SpeechAttributeSpellOut</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.SwitchControlStatusDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TextAttributeContext</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TextAttributeCustom</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TextAttributeHeadingLevel</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitAdjustable</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitAllowsDirectInteraction</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitButton</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitCausesPageTurn</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitHeader</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitImage</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitKeyboardKey</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitLink</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitNone</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitNotEnabled</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitPlaysSound</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitSearchField</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitSelected</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitStartsMediaSession</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitStaticText</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitSummaryElement</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitTabBar</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.TraitUpdatesFrequently</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.UILayoutFittingCompressedSize</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.UILayoutFittingExpandedSize</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.UnfocusedElementKey</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.VideoAutoplayStatusDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.VoiceOverStatusChanged</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.VoiceOverStatusDidChangeNotification</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AnimationWillStart</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIView.AnimationWillEnd</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.AccessibilityDecrement()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.AccessibilityElementDidBecomeFocused()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.AccessibilityElementDidLoseFocus()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.AccessibilityElementIsFocused()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.AccessibilityIncrement()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.AccessibilityPerformEscape()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.AccessibilityPerformMagicTap()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.AccessibilityScroll(UIKit.UIAccessibilityScrollDirection)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.BecomeFirstResponder()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.BuildMenu(UIKit.IUIMenuBuilder)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.CanPaste(Foundation.NSItemProvider[])</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.CanPerform(ObjCRuntime.Selector, Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.ClearTextInputContextIdentifier(Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.Copy(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.Cut(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.Delete(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.GetTargetForAction(ObjCRuntime.Selector, Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.MakeTextWritingDirectionLeftToRight(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.MakeTextWritingDirectionRightToLeft(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.MotionBegan(UIKit.UIEventSubtype, UIKit.UIEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.MotionCancelled(UIKit.UIEventSubtype, UIKit.UIEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.MotionEnded(UIKit.UIEventSubtype, UIKit.UIEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.Paste(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.Paste(Foundation.NSItemProvider[])</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.PressesBegan(Foundation.NSSet&lt;UIKit.UIPress&gt;, UIKit.UIPressesEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.PressesCancelled(Foundation.NSSet&lt;UIKit.UIPress&gt;, UIKit.UIPressesEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.PressesChanged(Foundation.NSSet&lt;UIKit.UIPress&gt;, UIKit.UIPressesEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.PressesEnded(Foundation.NSSet&lt;UIKit.UIPress&gt;, UIKit.UIPressesEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.ReloadInputViews()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.RemoteControlReceived(UIKit.UIEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.ResignFirstResponder()</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.RestoreUserActivityState(Foundation.NSUserActivity)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.Select(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.SelectAll(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.ToggleBoldface(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.ToggleItalics(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.ToggleUnderline(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.TouchesBegan(Foundation.NSSet, UIKit.UIEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.TouchesCancelled(Foundation.NSSet, UIKit.UIEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.TouchesEnded(Foundation.NSSet, UIKit.UIEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.TouchesEstimatedPropertiesUpdated(Foundation.NSSet)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.TouchesMoved(Foundation.NSSet, UIKit.UIEvent)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.UpdateTextAttributes(UIKit.UITextAttributesConversionHandler)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.UpdateUserActivityState(Foundation.NSUserActivity)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.ValidateCommand(UIKit.UICommand)</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.AccessibilityAssistiveTechnologyFocusedIdentifiers</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.AccessibilityCustomActions</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.AccessibilityDragSourceDescriptors</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.AccessibilityDropPointDescriptors</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.ActivityItemsConfiguration</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.CanBecomeFirstResponder</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.CanResignFirstResponder</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.EditingInteractionConfiguration</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.InputAccessoryView</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.InputAccessoryViewController</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.InputAssistantItem</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.InputView</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.InputViewController</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.IsFirstResponder</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.KeyCommands</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.NextResponder</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.PasteConfiguration</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.TextInputContextIdentifier</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.TextInputMode</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.UndoManager</span>
+    </div>
+    <div>
+      <span class="xref">UIKit.UIResponder.UserActivity</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PlatformAssembly</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.MonoTouchAssembly</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.IsNewRefcountEnabled()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.MarkDirty()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ConformsToProtocol(System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DangerousRelease()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DangerousRetain()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DangerousAutorelease()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetNativeField(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SetNativeField(System.String, Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.BeginInvokeOnMainThread(ObjCRuntime.Selector, Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.InvokeOnMainThread(ObjCRuntime.Selector, Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.BeginInvokeOnMainThread(System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.InvokeOnMainThread(System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.FromObject(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SetValueForKeyPath(System.IntPtr, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Equals(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Invoke(System.Action, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Invoke(System.Action, System.TimeSpan)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.AddObserver(System.String, Foundation.NSKeyValueObservingOptions, System.Action&lt;Foundation.NSObservedChange&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.AddObserver(Foundation.NSString, Foundation.NSKeyValueObservingOptions, System.Action&lt;Foundation.NSObservedChange&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Alloc(ObjCRuntime.Class)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Init()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.InvokeInBackground(System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.AddObserver(Foundation.NSObject, Foundation.NSString, Foundation.NSKeyValueObservingOptions, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.AddObserver(Foundation.NSObject, System.String, Foundation.NSKeyValueObservingOptions, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.AutomaticallyNotifiesObserversForKey(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.AwakeFromNib()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject, ObjCRuntime.Selector, Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Copy()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DidChange(Foundation.NSKeyValueChange, Foundation.NSIndexSet, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DidChange(Foundation.NSString, Foundation.NSKeyValueSetMutationKind, Foundation.NSSet)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DidChangeValue(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DoesNotRecognizeSelector(ObjCRuntime.Selector)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetDictionaryOfValuesFromKeys(Foundation.NSString[])</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetKeyPathsForValuesAffecting(Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetMethodForSelector(ObjCRuntime.Selector)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetNativeHash()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.IsEqual(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.IsKindOfClass(ObjCRuntime.Class)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.IsMemberOfClass(ObjCRuntime.Class)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.MutableCopy()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ObserveValue(Foundation.NSString, Foundation.NSObject, Foundation.NSDictionary, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSObject, System.Double, Foundation.NSString[])</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSObject, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSThread, Foundation.NSObject, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSThread, Foundation.NSObject, System.Boolean, Foundation.NSString[])</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PerformSelector(ObjCRuntime.Selector)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSObject, Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PrepareForInterfaceBuilder()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.RemoveObserver(Foundation.NSObject, Foundation.NSString, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.RemoveObserver(Foundation.NSObject, System.String, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.RemoveObserver(Foundation.NSObject, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.RemoveObserver(Foundation.NSObject, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.RespondsToSelector(ObjCRuntime.Selector)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SetNilValueForKey(Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SetValueForKey(Foundation.NSObject, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SetValueForKeyPath(Foundation.NSObject, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SetValueForUndefinedKey(Foundation.NSObject, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SetValuesForKeysWithDictionary(Foundation.NSDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ValueForKey(Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ValueForKeyPath(Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ValueForUndefinedKey(Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.WillChange(Foundation.NSKeyValueChange, Foundation.NSIndexSet, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.WillChange(Foundation.NSString, Foundation.NSKeyValueSetMutationKind, Foundation.NSSet)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.WillChangeValue(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.IsDirectBinding</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SuperHandle</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Handle</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Class</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DebugDescription</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Description</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.IsProxy</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.RetainCount</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Self</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Superclass</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Zone</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ChangeIndexesKey</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ChangeKindKey</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ChangeNewKey</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ChangeNotificationIsPriorKey</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ChangeOldKey</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BlazorWebView.iOS.html">BlazorWebView.iOS</a></h6>
+  <h6><strong>Assembly</strong>: BlazorWebView.iOS.dll</h6>
+  <h5 id="BlazorWebView_iOS_BlazorWebView_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Register(&quot;BlazorWebView&quot;)]
+public class BlazorWebView : UIControl, IEquatable&lt;NSObject&gt;, INSObjectProtocol, IUIPasteConfigurationSupporting, IUIUserActivityRestoring, IEnumerable, INSCoding, IUIAccessibilityIdentification, IUIAppearance, IUIAppearanceContainer, IUICoordinateSpace, IUIDynamicItem, IUIFocusItem, IUIFocusEnvironment, IUIFocusItemContainer, IUILargeContentViewerItem, IUITraitEnvironment, ICALayerDelegate, IWKScriptMessageHandler, INativeObject, IDisposable, IBlazorWebView</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_iOS_BlazorWebView__ctor.md&amp;value=---%0Auid%3A%20BlazorWebView.iOS.BlazorWebView.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.iOS/BlazorWebView.cs/#L79">View Source</a>
+  </span>
+  <a id="BlazorWebView_iOS_BlazorWebView__ctor_" data-uid="BlazorWebView.iOS.BlazorWebView.#ctor*"></a>
+  <h4 id="BlazorWebView_iOS_BlazorWebView__ctor" data-uid="BlazorWebView.iOS.BlazorWebView.#ctor">BlazorWebView()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="BlazorWebView.iOS.BlazorWebView.html">BlazorWebView</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlazorWebView()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_iOS_BlazorWebView__ctor_CoreGraphics_CGRect_.md&amp;value=---%0Auid%3A%20BlazorWebView.iOS.BlazorWebView.%23ctor(CoreGraphics.CGRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.iOS/BlazorWebView.cs/#L88">View Source</a>
+  </span>
+  <a id="BlazorWebView_iOS_BlazorWebView__ctor_" data-uid="BlazorWebView.iOS.BlazorWebView.#ctor*"></a>
+  <h4 id="BlazorWebView_iOS_BlazorWebView__ctor_CoreGraphics_CGRect_" data-uid="BlazorWebView.iOS.BlazorWebView.#ctor(CoreGraphics.CGRect)">BlazorWebView(CGRect)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="BlazorWebView.iOS.BlazorWebView.html">BlazorWebView</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Export(&quot;initWithFrame:&quot;)]
+public BlazorWebView(CGRect frameRect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CoreGraphics.CGRect</span></td>
+        <td><span class="parametername">frameRect</span></td>
+        <td><p>A rectangle defining location and size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_iOS_BlazorWebView__ctor_System_IntPtr_.md&amp;value=---%0Auid%3A%20BlazorWebView.iOS.BlazorWebView.%23ctor(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.iOS/BlazorWebView.cs/#L70">View Source</a>
+  </span>
+  <a id="BlazorWebView_iOS_BlazorWebView__ctor_" data-uid="BlazorWebView.iOS.BlazorWebView.#ctor*"></a>
+  <h4 id="BlazorWebView_iOS_BlazorWebView__ctor_System_IntPtr_" data-uid="BlazorWebView.iOS.BlazorWebView.#ctor(System.IntPtr)">BlazorWebView(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="BlazorWebView.iOS.BlazorWebView.html">BlazorWebView</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlazorWebView(IntPtr handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to an encapsulated native objet.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_iOS_BlazorWebView_DidReceiveScriptMessage_WebKit_WKUserContentController_WebKit_WKScriptMessage_.md&amp;value=---%0Auid%3A%20BlazorWebView.iOS.BlazorWebView.DidReceiveScriptMessage(WebKit.WKUserContentController%2CWebKit.WKScriptMessage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.iOS/BlazorWebView.cs/#L105">View Source</a>
+  </span>
+  <a id="BlazorWebView_iOS_BlazorWebView_DidReceiveScriptMessage_" data-uid="BlazorWebView.iOS.BlazorWebView.DidReceiveScriptMessage*"></a>
+  <h4 id="BlazorWebView_iOS_BlazorWebView_DidReceiveScriptMessage_WebKit_WKUserContentController_WebKit_WKScriptMessage_" data-uid="BlazorWebView.iOS.BlazorWebView.DidReceiveScriptMessage(WebKit.WKUserContentController,WebKit.WKScriptMessage)">DidReceiveScriptMessage(WKUserContentController, WKScriptMessage)</h4>
+  <div class="markdown level1 summary"><p>Invoked when a script message is received from a webpage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DidReceiveScriptMessage(WKUserContentController userContentController, WKScriptMessage message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WebKit.WKUserContentController</span></td>
+        <td><span class="parametername">userContentController</span></td>
+        <td><p>The user content controller invoking the delegate method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">WebKit.WKScriptMessage</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The script message received.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_iOS_BlazorWebView_Initialize_System_Action_BlazorWebView_WebViewOptions__.md&amp;value=---%0Auid%3A%20BlazorWebView.iOS.BlazorWebView.Initialize(System.Action%7BBlazorWebView.WebViewOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.iOS/BlazorWebView.cs/#L179">View Source</a>
+  </span>
+  <a id="BlazorWebView_iOS_BlazorWebView_Initialize_" data-uid="BlazorWebView.iOS.BlazorWebView.Initialize*"></a>
+  <h4 id="BlazorWebView_iOS_BlazorWebView_Initialize_System_Action_BlazorWebView_WebViewOptions__" data-uid="BlazorWebView.iOS.BlazorWebView.Initialize(System.Action{BlazorWebView.WebViewOptions})">Initialize(Action&lt;WebViewOptions&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initialize the BlazorWebView.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(Action&lt;WebViewOptions&gt; configure)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="BlazorWebView.WebViewOptions.html">WebViewOptions</a>&gt;</td>
+        <td><span class="parametername">configure</span></td>
+        <td><p>A delegate that is executed to configure the webview.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_iOS_BlazorWebView_Invoke_System_Action_.md&amp;value=---%0Auid%3A%20BlazorWebView.iOS.BlazorWebView.Invoke(System.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.iOS/BlazorWebView.cs/#L114">View Source</a>
+  </span>
+  <a id="BlazorWebView_iOS_BlazorWebView_Invoke_" data-uid="BlazorWebView.iOS.BlazorWebView.Invoke*"></a>
+  <h4 id="BlazorWebView_iOS_BlazorWebView_Invoke_System_Action_" data-uid="BlazorWebView.iOS.BlazorWebView.Invoke(System.Action)">Invoke(Action)</h4>
+  <div class="markdown level1 summary"><p>Invoke a callback on the UI thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Invoke(Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>The callback to execute.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_iOS_BlazorWebView_NavigateToUrl_System_String_.md&amp;value=---%0Auid%3A%20BlazorWebView.iOS.BlazorWebView.NavigateToUrl(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.iOS/BlazorWebView.cs/#L152">View Source</a>
+  </span>
+  <a id="BlazorWebView_iOS_BlazorWebView_NavigateToUrl_" data-uid="BlazorWebView.iOS.BlazorWebView.NavigateToUrl*"></a>
+  <h4 id="BlazorWebView_iOS_BlazorWebView_NavigateToUrl_System_String_" data-uid="BlazorWebView.iOS.BlazorWebView.NavigateToUrl(System.String)">NavigateToUrl(String)</h4>
+  <div class="markdown level1 summary"><p>Navigate to the specified URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NavigateToUrl(string url)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>The URL to navigate to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_iOS_BlazorWebView_SendMessage_System_String_.md&amp;value=---%0Auid%3A%20BlazorWebView.iOS.BlazorWebView.SendMessage(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.iOS/BlazorWebView.cs/#L131">View Source</a>
+  </span>
+  <a id="BlazorWebView_iOS_BlazorWebView_SendMessage_" data-uid="BlazorWebView.iOS.BlazorWebView.SendMessage*"></a>
+  <h4 id="BlazorWebView_iOS_BlazorWebView_SendMessage_System_String_" data-uid="BlazorWebView.iOS.BlazorWebView.SendMessage(System.String)">SendMessage(String)</h4>
+  <div class="markdown level1 summary"><p>Send a message to javascript.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendMessage(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to send.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_iOS_BlazorWebView_ShowMessage_System_String_System_String_.md&amp;value=---%0Auid%3A%20BlazorWebView.iOS.BlazorWebView.ShowMessage(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.iOS/BlazorWebView.cs/#L164">View Source</a>
+  </span>
+  <a id="BlazorWebView_iOS_BlazorWebView_ShowMessage_" data-uid="BlazorWebView.iOS.BlazorWebView.ShowMessage*"></a>
+  <h4 id="BlazorWebView_iOS_BlazorWebView_ShowMessage_System_String_System_String_" data-uid="BlazorWebView.iOS.BlazorWebView.ShowMessage(System.String,System.String)">ShowMessage(String, String)</h4>
+  <div class="markdown level1 summary"><p>Show a native dialog for the platform with the specified message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowMessage(string title, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>The title to show.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to show.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_iOS_BlazorWebView_OnWebMessageReceived.md&amp;value=---%0Auid%3A%20BlazorWebView.iOS.BlazorWebView.OnWebMessageReceived%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.iOS/BlazorWebView.cs/#L98">View Source</a>
+  </span>
+  <h4 id="BlazorWebView_iOS_BlazorWebView_OnWebMessageReceived" data-uid="BlazorWebView.iOS.BlazorWebView.OnWebMessageReceived">OnWebMessageReceived</h4>
+  <div class="markdown level1 summary"><p>Event that is fired when a web message is received from javascript.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;string&gt; OnWebMessageReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Foundation.INSObjectProtocol</span>
+  </div>
+  <div>
+      <span class="xref">UIKit.IUIPasteConfigurationSupporting</span>
+  </div>
+  <div>
+      <span class="xref">UIKit.IUIUserActivityRestoring</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <div>
+      <span class="xref">Foundation.INSCoding</span>
+  </div>
+  <div>
+      <span class="xref">UIKit.IUIAccessibilityIdentification</span>
+  </div>
+  <div>
+      <span class="xref">UIKit.IUIAppearance</span>
+  </div>
+  <div>
+      <span class="xref">UIKit.IUIAppearanceContainer</span>
+  </div>
+  <div>
+      <span class="xref">UIKit.IUICoordinateSpace</span>
+  </div>
+  <div>
+      <span class="xref">UIKit.IUIDynamicItem</span>
+  </div>
+  <div>
+      <span class="xref">UIKit.IUIFocusItem</span>
+  </div>
+  <div>
+      <span class="xref">UIKit.IUIFocusEnvironment</span>
+  </div>
+  <div>
+      <span class="xref">UIKit.IUIFocusItemContainer</span>
+  </div>
+  <div>
+      <span class="xref">UIKit.IUILargeContentViewerItem</span>
+  </div>
+  <div>
+      <span class="xref">UIKit.IUITraitEnvironment</span>
+  </div>
+  <div>
+      <span class="xref">CoreAnimation.ICALayerDelegate</span>
+  </div>
+  <div>
+      <span class="xref">WebKit.IWKScriptMessageHandler</span>
+  </div>
+  <div>
+      <span class="xref">ObjCRuntime.INativeObject</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="BlazorWebView.IBlazorWebView.html">IBlazorWebView</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_iOS_BlazorWebView.md&amp;value=---%0Auid%3A%20BlazorWebView.iOS.BlazorWebView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.iOS/BlazorWebView.cs/#L34" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,419 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/BlazorWebView/BlazorWebView/BlazorWebView/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "36DVNaoyfPU1/LdzWHpylQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "pages/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "pages/index.html",
+          "hash": "W9Yc9f1mgoYoQi0W74/PvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "pages/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "pages/toc.html",
+          "hash": "BW9KWMRT30aIxtjrtfxBRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Android.AndroidAssetResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Android.AndroidAssetResolver.html",
+          "hash": "eMmGf0tiEqipKKr86n+NQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Android.BlazorJavascriptInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Android.BlazorJavascriptInterface.html",
+          "hash": "S+gTdtmtbBZNS8HYYej3Bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Android.BlazorWebView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Android.BlazorWebView.html",
+          "hash": "ptaOoat2cVFj/bIhWO7GbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Android.BlazorWebViewClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Android.BlazorWebViewClient.html",
+          "hash": "bsGt4EdSYbf6LBvPyb0EgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Android.Resource.Attribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Android.Resource.Attribute.html",
+          "hash": "/FjhgVffEXLTf5EpOZkjWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Android.Resource.Id.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Android.Resource.Id.html",
+          "hash": "8ufjIYD0JA8AmpGjemZ5jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Android.Resource.Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Android.Resource.Layout.html",
+          "hash": "kSWcLRVS1IEFNLsarQQEPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Android.Resource.String.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Android.Resource.String.html",
+          "hash": "vNeuXEkPGXqIYyOrkxBC4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Android.Resource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Android.Resource.html",
+          "hash": "+/rASCzG0ThBMRZpANSYaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Android.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Android.html",
+          "hash": "o+3Pb43NhCz6YGqH8jY/UA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.ApplicationBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.ApplicationBuilder.html",
+          "hash": "t/aVaSjGovZOtPlUgsx5Xg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.BlazorWebViewHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.BlazorWebViewHost.html",
+          "hash": "sp0WteVGCyaVSMowypUgCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.IBlazorWebView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.IBlazorWebView.html",
+          "hash": "Bux5WJPL0DtRTLNsBGgt7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.JSInteropMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.JSInteropMethods.html",
+          "hash": "hFQk5f+nBJGXjQ4DFEOecw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Mac.BlazorWebView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Mac.BlazorWebView.html",
+          "hash": "SHWLoX9TifzkLrbps1Dmpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Mac.UrlSchemeHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Mac.UrlSchemeHandler.html",
+          "hash": "sHQMBHhtKVeG8SWqutXDZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Mac.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Mac.html",
+          "hash": "6wVk016+ms2bdHuG3C3bZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.ResolveWebResourceDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.ResolveWebResourceDelegate.html",
+          "hash": "BxC5kIaR6M4v0+haVX3YYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.WebViewOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.WebViewOptions.html",
+          "hash": "EQ2eEYcOQJ1k6sdebWLj4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Wpf.BlazorWebView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Wpf.BlazorWebView.html",
+          "hash": "1uDS7KE0NfExyvUDfS3QTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Wpf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Wpf.html",
+          "hash": "nchgdqIjOJsQhCJNhyIrhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.iOS.BlazorWebView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.iOS.BlazorWebView.html",
+          "hash": "zYXH47WI403yOM5fk023Kw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.iOS.UrlSchemeHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.iOS.UrlSchemeHandler.html",
+          "hash": "KeXTckPTfDzO8DPERhUeCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.iOS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.iOS.html",
+          "hash": "1dDS7hfKGMgFyYMygRPFbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.html",
+          "hash": "+MSjzR6YolrtT95fr72bew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "ref/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/toc.html",
+          "hash": "lVjr68AkMteAJuEmUo00Vw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "lMRb0vriyXMGmBHrDTJB+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 25,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

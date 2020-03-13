@@ -1,0 +1,536 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BlazorWebViewClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BlazorWebViewClient
+   ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BlazorWebView.Android.BlazorWebViewClient">
+  
+  
+  <h1 id="BlazorWebView_Android_BlazorWebViewClient" data-uid="BlazorWebView.Android.BlazorWebViewClient" class="text-break">Class BlazorWebViewClient
+  </h1>
+  <div class="markdown level0 summary"><p>A <span class="xref">Android.Webkit.WebViewClient</span> implementation to handle events that happen
+on the inner Android <span class="xref">Android.Webkit.WebView</span>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Java.Lang.Object</span></div>
+    <div class="level2"><span class="xref">Android.Webkit.WebViewClient</span></div>
+    <div class="level3"><span class="xref">BlazorWebViewClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Android.Runtime.IJavaObject</span></div>
+    <div><span class="xref">Java.Interop.IJavaPeerable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.DoUpdateVisitedHistory(Android.Webkit.WebView, System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnFormResubmission(Android.Webkit.WebView, Android.OS.Message, Android.OS.Message)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnLoadResource(Android.Webkit.WebView, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnPageCommitVisible(Android.Webkit.WebView, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnPageFinished(Android.Webkit.WebView, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnReceivedClientCertRequest(Android.Webkit.WebView, Android.Webkit.ClientCertRequest)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnReceivedError(Android.Webkit.WebView, Android.Webkit.IWebResourceRequest, Android.Webkit.WebResourceError)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnReceivedError(Android.Webkit.WebView, Android.Webkit.ClientError, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnReceivedHttpAuthRequest(Android.Webkit.WebView, Android.Webkit.HttpAuthHandler, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnReceivedHttpError(Android.Webkit.WebView, Android.Webkit.IWebResourceRequest, Android.Webkit.WebResourceResponse)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnReceivedLoginRequest(Android.Webkit.WebView, System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnReceivedSslError(Android.Webkit.WebView, Android.Webkit.SslErrorHandler, Android.Net.Http.SslError)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnRenderProcessGone(Android.Webkit.WebView, Android.Webkit.RenderProcessGoneDetail)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnSafeBrowsingHit(Android.Webkit.WebView, Android.Webkit.IWebResourceRequest, Android.Webkit.SafeBrowsingThreat, Android.Webkit.SafeBrowsingResponse)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnScaleChanged(Android.Webkit.WebView, System.Single, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnTooManyRedirects(Android.Webkit.WebView, Android.OS.Message, Android.OS.Message)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnUnhandledInputEvent(Android.Webkit.WebView, Android.Views.InputEvent)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.OnUnhandledKeyEvent(Android.Webkit.WebView, Android.Views.KeyEvent)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.ShouldInterceptRequest(Android.Webkit.WebView, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.ShouldOverrideKeyEvent(Android.Webkit.WebView, Android.Views.KeyEvent)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.ShouldOverrideUrlLoading(Android.Webkit.WebView, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.JniPeerMembers</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.ThresholdClass</span>
+    </div>
+    <div>
+      <span class="xref">Android.Webkit.WebViewClient.ThresholdType</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Java.Interop.IJavaPeerable.DisposeUnlessReferenced()</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.UnregisterFromRuntime()</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Java.Interop.IJavaPeerable.Disposed()</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Java.Interop.IJavaPeerable.Finalized()</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Java.Interop.IJavaPeerable.SetJniIdentityHashCode(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Java.Interop.IJavaPeerable.SetJniManagedPeerState(Java.Interop.JniManagedPeerStates)</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Java.Interop.IJavaPeerable.SetPeerReference(Java.Interop.JniObjectReference)</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.SetHandle(System.IntPtr, Android.Runtime.JniHandleOwnership)</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.GetObject&lt;T&gt;(System.IntPtr, System.IntPtr, Android.Runtime.JniHandleOwnership)</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.GetObject&lt;T&gt;(System.IntPtr, Android.Runtime.JniHandleOwnership)</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.ToArray&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.FromArray&lt;T&gt;(T[])</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Clone()</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Equals(Java.Lang.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.JavaFinalize()</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Wait()</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Wait(System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Wait(System.Int64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.JniIdentityHashCode</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.PeerReference</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Handle</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Java.Interop.IJavaPeerable.JniManagedPeerState</span>
+    </div>
+    <div>
+      <span class="xref">Java.Lang.Object.Class</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BlazorWebView.Android.html">BlazorWebView.Android</a></h6>
+  <h6><strong>Assembly</strong>: BlazorWebView.Android.dll</h6>
+  <h5 id="BlazorWebView_Android_BlazorWebViewClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BlazorWebViewClient : WebViewClient, IJavaObject, IJavaObjectEx, IJavaPeerable, IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Android_BlazorWebViewClient_OnPageStarted_Android_Webkit_WebView_System_String_Android_Graphics_Bitmap_.md&amp;value=---%0Auid%3A%20BlazorWebView.Android.BlazorWebViewClient.OnPageStarted(Android.Webkit.WebView%2CSystem.String%2CAndroid.Graphics.Bitmap)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Android/BlazorWebViewClient.cs/#L143">View Source</a>
+  </span>
+  <a id="BlazorWebView_Android_BlazorWebViewClient_OnPageStarted_" data-uid="BlazorWebView.Android.BlazorWebViewClient.OnPageStarted*"></a>
+  <h4 id="BlazorWebView_Android_BlazorWebViewClient_OnPageStarted_Android_Webkit_WebView_System_String_Android_Graphics_Bitmap_" data-uid="BlazorWebView.Android.BlazorWebViewClient.OnPageStarted(Android.Webkit.WebView,System.String,Android.Graphics.Bitmap)">OnPageStarted(WebView, String, Bitmap)</h4>
+  <div class="markdown level1 summary"><p>Notify the host application that a page has started loading. This method is called once for each main frame
+load so a page with iframes or framesets will call onPageStarted one time for the main frame. This also
+means that onPageStarted will not be called when the contents of an embedded frame changes, i.e. clicking
+a link whose target is an iframe, it will also not be called for fragment navigations
+(navigations to #fragment_id).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPageStarted(WebView view, string url, Bitmap favicon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Android.Webkit.WebView</span></td>
+        <td><span class="parametername">view</span></td>
+        <td><p>The WebView that is initiating the callback.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>The url to be loaded.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Android.Graphics.Bitmap</span></td>
+        <td><span class="parametername">favicon</span></td>
+        <td><p>The favicon for this page if it already exists in the database.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Android.Webkit.WebViewClient.OnPageStarted(Android.Webkit.WebView, System.String, Android.Graphics.Bitmap)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Android_BlazorWebViewClient_ShouldInterceptRequest_Android_Webkit_WebView_Android_Webkit_IWebResourceRequest_.md&amp;value=---%0Auid%3A%20BlazorWebView.Android.BlazorWebViewClient.ShouldInterceptRequest(Android.Webkit.WebView%2CAndroid.Webkit.IWebResourceRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Android/BlazorWebViewClient.cs/#L96">View Source</a>
+  </span>
+  <a id="BlazorWebView_Android_BlazorWebViewClient_ShouldInterceptRequest_" data-uid="BlazorWebView.Android.BlazorWebViewClient.ShouldInterceptRequest*"></a>
+  <h4 id="BlazorWebView_Android_BlazorWebViewClient_ShouldInterceptRequest_Android_Webkit_WebView_Android_Webkit_IWebResourceRequest_" data-uid="BlazorWebView.Android.BlazorWebViewClient.ShouldInterceptRequest(Android.Webkit.WebView,Android.Webkit.IWebResourceRequest)">ShouldInterceptRequest(WebView, IWebResourceRequest)</h4>
+  <div class="markdown level1 summary"><p>Notify the host application of a resource request and allow the application to return the data.
+If the return value is null, the WebView will continue to load the resource as usual.
+Otherwise, the return response and data will be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override WebResourceResponse ShouldInterceptRequest(WebView view, IWebResourceRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Android.Webkit.WebView</span></td>
+        <td><span class="parametername">view</span></td>
+        <td><p>The WebView that is requesting the resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Android.Webkit.IWebResourceRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Object containing the details of the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Android.Webkit.WebResourceResponse</span></td>
+        <td><p>A WebResourceResponse containing the response information or null
+if the WebView should load the resource itself.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Android.Webkit.WebViewClient.ShouldInterceptRequest(Android.Webkit.WebView, Android.Webkit.IWebResourceRequest)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Android_BlazorWebViewClient_ShouldOverrideUrlLoading_Android_Webkit_WebView_Android_Webkit_IWebResourceRequest_.md&amp;value=---%0Auid%3A%20BlazorWebView.Android.BlazorWebViewClient.ShouldOverrideUrlLoading(Android.Webkit.WebView%2CAndroid.Webkit.IWebResourceRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Android/BlazorWebViewClient.cs/#L74">View Source</a>
+  </span>
+  <a id="BlazorWebView_Android_BlazorWebViewClient_ShouldOverrideUrlLoading_" data-uid="BlazorWebView.Android.BlazorWebViewClient.ShouldOverrideUrlLoading*"></a>
+  <h4 id="BlazorWebView_Android_BlazorWebViewClient_ShouldOverrideUrlLoading_Android_Webkit_WebView_Android_Webkit_IWebResourceRequest_" data-uid="BlazorWebView.Android.BlazorWebViewClient.ShouldOverrideUrlLoading(Android.Webkit.WebView,Android.Webkit.IWebResourceRequest)">ShouldOverrideUrlLoading(WebView, IWebResourceRequest)</h4>
+  <div class="markdown level1 summary"><p>Give the host application a chance to take control when a URL is about to be loaded in the current WebView.
+If a WebViewClient is not provided, by default WebView will ask Activity Manager to choose the proper
+handler for the URL. If a WebViewClient is provided, returning true causes the current WebView to abort
+loading the URL, while returning false causes the WebView to continue loading the URL as usual.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ShouldOverrideUrlLoading(WebView view, IWebResourceRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Android.Webkit.WebView</span></td>
+        <td><span class="parametername">view</span></td>
+        <td><p>The WebView that is initiating the callback.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Android.Webkit.IWebResourceRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Object containing the details of the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true to cancel the current load, otherwise return false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Android.Webkit.WebViewClient.ShouldOverrideUrlLoading(Android.Webkit.WebView, Android.Webkit.IWebResourceRequest)</span></div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Android_BlazorWebViewClient_PageStarted.md&amp;value=---%0Auid%3A%20BlazorWebView.Android.BlazorWebViewClient.PageStarted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Android/BlazorWebViewClient.cs/#L63">View Source</a>
+  </span>
+  <h4 id="BlazorWebView_Android_BlazorWebViewClient_PageStarted" data-uid="BlazorWebView.Android.BlazorWebViewClient.PageStarted">PageStarted</h4>
+  <div class="markdown level1 summary"><p>Exposes an event that fires when the loading of a page is started, used to inject
+the <a class="xref" href="BlazorWebView.Android.BlazorJavascriptInterface.html">BlazorJavascriptInterface</a> object into the web view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler PageStarted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Android.Runtime.IJavaObject</span>
+  </div>
+  <div>
+      <span class="xref">Java.Interop.IJavaPeerable</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Android_BlazorWebViewClient.md&amp;value=---%0Auid%3A%20BlazorWebView.Android.BlazorWebViewClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Android/BlazorWebViewClient.cs/#L37" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>BlazorWebView documentation. </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="BlazorWebView documentation. ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<img src="../logo.svg" alt="BlazorWebView" height="120" align="right">
+<h1 id="blazorwebview-documentation">BlazorWebView documentation.</h1>
+<p>Blazor traditionally runs on dotnet core for Server Side Blazor and runs the Mono runtime on webassembly inside the
+browser for client side blazor. For desktop and mobile applications this is cumbersome as it requires a bundled web-
+server and retains the disadvantages of SSB or CSB respectively.</p>
+<p>Steve Sanderson from Microsoft first escaped the server / clientside jail and released a
+<a href="https://github.com/SteveSandersonMS/WebWindow">dotnet core sample</a> that runs on dotnet core and leverages native
+webviews on Windows / Linux / OsX to show a window on these respective operating systems.
+Steve made a
+<a href="https://blog.stevensanderson.com/2019/11/18/2019-11-18-webwindow-a-cross-platform-webview-for-dotnet-core/">blogpost</a>
+describing his efforts, an excellent introduction to what this is.</p>
+<p>Building on these foundations I have created a BlazorWebView &quot;Control&quot; that is easily embedded in (Native) UI frameworks
+on the following platforms:</p>
+<ul>
+<li>Xamarin Android (running on the Mono runtime)</li>
+<li>Xamarin iOS (running on the Mono runtime)</li>
+<li>Xamarin Mac (running on the Mono runtime)</li>
+<li>WPF (running on the dotnet core runtime)</li>
+</ul>
+<p>I'm considering adding these platforms in the future:</p>
+<ul>
+<li>GTK Linux (running on the Mono runtime or dotnet core)</li>
+<li>GTK Mac (running on dotnet core)</li>
+<li>Winforms (running on the dotnet core runtime)</li>
+<li>Apple TV (running on the Mono runtime)</li>
+<li>Apple Watch  (running on the Mono runtime)</li>
+</ul>
+<p>The advantage of using Xamarin on mobile platforms is that you can use the
+<a href="https://docs.microsoft.com/en-us/xamarin/essentials/">Xamarin Essentials</a> library to interact with mobile platform
+API's easily from .NET.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jspuij/BlazorWebView/blob/master/docs/pages/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

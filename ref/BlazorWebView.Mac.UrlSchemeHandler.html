@@ -1,0 +1,586 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UrlSchemeHandler
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UrlSchemeHandler
+   ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BlazorWebView.Mac.UrlSchemeHandler">
+  
+  
+  <h1 id="BlazorWebView_Mac_UrlSchemeHandler" data-uid="BlazorWebView.Mac.UrlSchemeHandler" class="text-break">Class UrlSchemeHandler
+  </h1>
+  <div class="markdown level0 summary"><p>Handles urls belonging to single scheme.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Foundation.NSObject</span></div>
+    <div class="level2"><span class="xref">UrlSchemeHandler</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<span class="xref">Foundation.NSObject</span>&gt;</div>
+    <div><span class="xref">Foundation.INSObjectProtocol</span></div>
+    <div><span class="xref">WebKit.IWKUrlSchemeHandler</span></div>
+    <div><span class="xref">ObjCRuntime.INativeObject</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Foundation.NSObject.PlatformAssembly</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.MonoMacAssembly</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.IsNewRefcountEnabled()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.MarkDirty()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ConformsToProtocol(System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DangerousRelease()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DangerousRetain()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DangerousAutorelease()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetNativeField(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SetNativeField(System.String, Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.BeginInvokeOnMainThread(ObjCRuntime.Selector, Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.InvokeOnMainThread(ObjCRuntime.Selector, Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.BeginInvokeOnMainThread(System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.InvokeOnMainThread(System.Action)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.FromObject(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SetValueForKeyPath(System.IntPtr, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Equals(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Invoke(System.Action, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Invoke(System.Action, System.TimeSpan)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.AddObserver(System.String, Foundation.NSKeyValueObservingOptions, System.Action&lt;Foundation.NSObservedChange&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.AddObserver(Foundation.NSString, Foundation.NSKeyValueObservingOptions, System.Action&lt;Foundation.NSObservedChange&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.AddObserver(Foundation.NSObject, Foundation.NSString, Foundation.NSKeyValueObservingOptions, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.AddObserver(Foundation.NSObject, System.String, Foundation.NSKeyValueObservingOptions, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.AutomaticallyNotifiesObserversForKey(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.AwakeFromNib()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Bind(Foundation.NSString, Foundation.NSObject, System.String, Foundation.NSDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject, ObjCRuntime.Selector, Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.CommitEditing()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.CommitEditing(Foundation.NSObject, ObjCRuntime.Selector, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Copy()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DidChange(Foundation.NSKeyValueChange, Foundation.NSIndexSet, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DidChange(Foundation.NSString, Foundation.NSKeyValueSetMutationKind, Foundation.NSSet)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DidChangeValue(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DoesNotRecognizeSelector(ObjCRuntime.Selector)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ExposedBindings()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetBindingInfo(Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetBindingOptionDescriptions(Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetBindingValueClass(Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetDefaultPlaceholder(Foundation.NSObject, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetDefaultPlaceholder(Foundation.NSObject, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetDictionaryOfValuesFromKeys(Foundation.NSString[])</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetKeyPathsForValuesAffecting(Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetMethodForSelector(ObjCRuntime.Selector)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.GetNativeHash()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.IsEqual(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.IsKindOfClass(ObjCRuntime.Class)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.IsMemberOfClass(ObjCRuntime.Class)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.MutableCopy()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ObjectDidEndEditing(Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ObserveValue(Foundation.NSString, Foundation.NSObject, Foundation.NSDictionary, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSObject, System.Double, Foundation.NSString[])</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSObject, System.Double)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSThread, Foundation.NSObject, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSThread, Foundation.NSObject, System.Boolean, Foundation.NSString[])</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PerformSelector(ObjCRuntime.Selector)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSObject, Foundation.NSObject)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.PrepareForInterfaceBuilder()</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.RemoveObserver(Foundation.NSObject, Foundation.NSString, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.RemoveObserver(Foundation.NSObject, System.String, System.IntPtr)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.RemoveObserver(Foundation.NSObject, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.RemoveObserver(Foundation.NSObject, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.RespondsToSelector(ObjCRuntime.Selector)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SetDefaultPlaceholder(Foundation.NSObject, Foundation.NSObject, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SetNilValueForKey(Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SetValueForKey(Foundation.NSObject, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SetValueForKeyPath(Foundation.NSObject, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SetValueForUndefinedKey(Foundation.NSObject, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SetValuesForKeysWithDictionary(Foundation.NSDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Unbind(Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ValueForKey(Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ValueForKeyPath(Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ValueForUndefinedKey(Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.WillChange(Foundation.NSKeyValueChange, Foundation.NSIndexSet, Foundation.NSString)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.WillChange(Foundation.NSString, Foundation.NSKeyValueSetMutationKind, Foundation.NSSet)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.WillChangeValue(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.IsDirectBinding</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.SuperHandle</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Handle</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ClassHandle</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Class</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.DebugDescription</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Description</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.IsProxy</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.RetainCount</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Self</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Superclass</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.Zone</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ChangeIndexesKey</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ChangeKindKey</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ChangeNewKey</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ChangeNotificationIsPriorKey</span>
+    </div>
+    <div>
+      <span class="xref">Foundation.NSObject.ChangeOldKey</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BlazorWebView.Mac.html">BlazorWebView.Mac</a></h6>
+  <h6><strong>Assembly</strong>: BlazorWebView.Mac.dll</h6>
+  <h5 id="BlazorWebView_Mac_UrlSchemeHandler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UrlSchemeHandler : NSObject, IEquatable&lt;NSObject&gt;, INSObjectProtocol, IWKUrlSchemeHandler, INativeObject, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Mac_UrlSchemeHandler__ctor_BlazorWebView_ResolveWebResourceDelegate_.md&amp;value=---%0Auid%3A%20BlazorWebView.Mac.UrlSchemeHandler.%23ctor(BlazorWebView.ResolveWebResourceDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Mac/UrlSchemeHandler.cs/#L38">View Source</a>
+  </span>
+  <a id="BlazorWebView_Mac_UrlSchemeHandler__ctor_" data-uid="BlazorWebView.Mac.UrlSchemeHandler.#ctor*"></a>
+  <h4 id="BlazorWebView_Mac_UrlSchemeHandler__ctor_BlazorWebView_ResolveWebResourceDelegate_" data-uid="BlazorWebView.Mac.UrlSchemeHandler.#ctor(BlazorWebView.ResolveWebResourceDelegate)">UrlSchemeHandler(ResolveWebResourceDelegate)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="BlazorWebView.Mac.UrlSchemeHandler.html">UrlSchemeHandler</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UrlSchemeHandler(ResolveWebResourceDelegate requestHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BlazorWebView.ResolveWebResourceDelegate.html">ResolveWebResourceDelegate</a></td>
+        <td><span class="parametername">requestHandler</span></td>
+        <td><p>A reference to the requesthandler delegate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Mac_UrlSchemeHandler_StartUrlSchemeTask_WebKit_WKWebView_WebKit_IWKUrlSchemeTask_.md&amp;value=---%0Auid%3A%20BlazorWebView.Mac.UrlSchemeHandler.StartUrlSchemeTask(WebKit.WKWebView%2CWebKit.IWKUrlSchemeTask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Mac/UrlSchemeHandler.cs/#L48">View Source</a>
+  </span>
+  <a id="BlazorWebView_Mac_UrlSchemeHandler_StartUrlSchemeTask_" data-uid="BlazorWebView.Mac.UrlSchemeHandler.StartUrlSchemeTask*"></a>
+  <h4 id="BlazorWebView_Mac_UrlSchemeHandler_StartUrlSchemeTask_WebKit_WKWebView_WebKit_IWKUrlSchemeTask_" data-uid="BlazorWebView.Mac.UrlSchemeHandler.StartUrlSchemeTask(WebKit.WKWebView,WebKit.IWKUrlSchemeTask)">StartUrlSchemeTask(WKWebView, IWKUrlSchemeTask)</h4>
+  <div class="markdown level1 summary"><p>Starts a task that handles the retrieval of the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartUrlSchemeTask(WKWebView webView, IWKUrlSchemeTask urlSchemeTask)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WebKit.WKWebView</span></td>
+        <td><span class="parametername">webView</span></td>
+        <td><p>The webview to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">WebKit.IWKUrlSchemeTask</span></td>
+        <td><span class="parametername">urlSchemeTask</span></td>
+        <td><p>The scheme task status object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Mac_UrlSchemeHandler_StopUrlSchemeTask_WebKit_WKWebView_WebKit_IWKUrlSchemeTask_.md&amp;value=---%0Auid%3A%20BlazorWebView.Mac.UrlSchemeHandler.StopUrlSchemeTask(WebKit.WKWebView%2CWebKit.IWKUrlSchemeTask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Mac/UrlSchemeHandler.cs/#L72">View Source</a>
+  </span>
+  <a id="BlazorWebView_Mac_UrlSchemeHandler_StopUrlSchemeTask_" data-uid="BlazorWebView.Mac.UrlSchemeHandler.StopUrlSchemeTask*"></a>
+  <h4 id="BlazorWebView_Mac_UrlSchemeHandler_StopUrlSchemeTask_WebKit_WKWebView_WebKit_IWKUrlSchemeTask_" data-uid="BlazorWebView.Mac.UrlSchemeHandler.StopUrlSchemeTask(WebKit.WKWebView,WebKit.IWKUrlSchemeTask)">StopUrlSchemeTask(WKWebView, IWKUrlSchemeTask)</h4>
+  <div class="markdown level1 summary"><p>Stops a task that handles the retrieval of the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopUrlSchemeTask(WKWebView webView, IWKUrlSchemeTask urlSchemeTask)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WebKit.WKWebView</span></td>
+        <td><span class="parametername">webView</span></td>
+        <td><p>The webview to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">WebKit.IWKUrlSchemeTask</span></td>
+        <td><span class="parametername">urlSchemeTask</span></td>
+        <td><p>The scheme task status object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Foundation.INSObjectProtocol</span>
+  </div>
+  <div>
+      <span class="xref">WebKit.IWKUrlSchemeHandler</span>
+  </div>
+  <div>
+      <span class="xref">ObjCRuntime.INativeObject</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Mac_UrlSchemeHandler.md&amp;value=---%0Auid%3A%20BlazorWebView.Mac.UrlSchemeHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Mac/UrlSchemeHandler.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
