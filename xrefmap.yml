@@ -667,6 +667,19 @@ references:
   isSpec: "True"
   fullName: BlazorWebView.JSInteropMethods.NotifyLocationChanged
   nameWithType: JSInteropMethods.NotifyLocationChanged
+- uid: BlazorWebView.JSInteropMethods.OnRenderCompleted(System.Int64,System.String)
+  name: OnRenderCompleted(Int64, String)
+  href: ref/BlazorWebView.JSInteropMethods.html#BlazorWebView_JSInteropMethods_OnRenderCompleted_System_Int64_System_String_
+  commentId: M:BlazorWebView.JSInteropMethods.OnRenderCompleted(System.Int64,System.String)
+  fullName: BlazorWebView.JSInteropMethods.OnRenderCompleted(System.Int64, System.String)
+  nameWithType: JSInteropMethods.OnRenderCompleted(Int64, String)
+- uid: BlazorWebView.JSInteropMethods.OnRenderCompleted*
+  name: OnRenderCompleted
+  href: ref/BlazorWebView.JSInteropMethods.html#BlazorWebView_JSInteropMethods_OnRenderCompleted_
+  commentId: Overload:BlazorWebView.JSInteropMethods.OnRenderCompleted
+  isSpec: "True"
+  fullName: BlazorWebView.JSInteropMethods.OnRenderCompleted
+  nameWithType: JSInteropMethods.OnRenderCompleted
 - uid: BlazorWebView.Mac
   name: BlazorWebView.Mac
   href: ref/BlazorWebView.Mac.html
