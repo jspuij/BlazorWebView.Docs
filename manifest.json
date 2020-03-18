@@ -272,11 +272,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Wpf.BlazorNewEdgeWebView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Wpf.BlazorNewEdgeWebView.html",
+          "hash": "ChOSrPZNaexR84YYcL1XEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "ref/BlazorWebView.Wpf.BlazorOldEdgeWebView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ref/BlazorWebView.Wpf.BlazorOldEdgeWebView.html",
+          "hash": "voUXE+0fb0QzVrjSRou2fQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "ref/BlazorWebView.Wpf.BlazorWebView.yml",
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Wpf.BlazorWebView.html",
-          "hash": "1uDS7KE0NfExyvUDfS3QTw=="
+          "hash": "RJnGmw05XxycRowUGIlkeA=="
         }
       },
       "is_incremental": false,
@@ -288,7 +312,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Wpf.html",
-          "hash": "nchgdqIjOJsQhCJNhyIrhg=="
+          "hash": "Ndi+dENQDt5+DE7wzMTDIg=="
         }
       },
       "is_incremental": false,
@@ -348,7 +372,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/toc.html",
-          "hash": "lVjr68AkMteAJuEmUo00Vw=="
+          "hash": "vLHiHKph0uqdTxRSjX1KEg=="
         }
       },
       "is_incremental": false,
@@ -387,7 +411,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 25,
+          "total_file_count": 27,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

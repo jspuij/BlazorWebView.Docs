@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class BlazorWebView
+    <title>Class BlazorNewEdgeWebView
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class BlazorWebView
+    <meta name="title" content="Class BlazorNewEdgeWebView
    ">
     <meta name="generator" content="docfx 2.50.0.0">
     
@@ -68,12 +68,12 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BlazorWebView.Wpf.BlazorWebView">
+            <article class="content wrap" id="_content" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView">
   
   
-  <h1 id="BlazorWebView_Wpf_BlazorWebView" data-uid="BlazorWebView.Wpf.BlazorWebView" class="text-break">Class BlazorWebView
+  <h1 id="BlazorWebView_Wpf_BlazorNewEdgeWebView" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView" class="text-break">Class BlazorNewEdgeWebView
   </h1>
-  <div class="markdown level0 summary"><p>UserControl that wraps either an NewEdgeWebView or the normal EdgeWebView, depending on what is installed.</p>
+  <div class="markdown level0 summary"><p>An <a class="xref" href="BlazorWebView.IBlazorWebView.html">IBlazorWebView</a> implementation for Wpf.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -84,10 +84,8 @@
     <div class="level3"><span class="xref">System.Windows.Media.Visual</span></div>
     <div class="level4"><span class="xref">System.Windows.UIElement</span></div>
     <div class="level5"><span class="xref">System.Windows.FrameworkElement</span></div>
-    <div class="level6"><span class="xref">System.Windows.Controls.Control</span></div>
-    <div class="level7"><span class="xref">System.Windows.Controls.ContentControl</span></div>
-    <div class="level8"><span class="xref">System.Windows.Controls.UserControl</span></div>
-    <div class="level9"><span class="xref">BlazorWebView</span></div>
+    <div class="level6"><span class="xref">System.Windows.Interop.HwndHost</span></div>
+    <div class="level7"><span class="xref">BlazorNewEdgeWebView</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -96,193 +94,93 @@
     <div><span class="xref">System.Windows.IFrameworkInputElement</span></div>
     <div><span class="xref">System.Windows.IInputElement</span></div>
     <div><span class="xref">System.Windows.Markup.IQueryAmbient</span></div>
-    <div><span class="xref">System.Windows.Markup.IAddChild</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.Windows.Interop.IKeyboardInputSink</span></div>
+    <div><span class="xref">System.Windows.Interop.IWin32Window</span></div>
     <div><a class="xref" href="BlazorWebView.IBlazorWebView.html">IBlazorWebView</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Windows.Controls.UserControl.OnCreateAutomationPeer()</span>
+      <span class="xref">System.Windows.Interop.HwndHost.DpiChangedEvent</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.ContentProperty</span>
+      <span class="xref">System.Windows.Interop.HwndHost.Dispose()</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.ContentStringFormatProperty</span>
+      <span class="xref">System.Windows.Interop.HwndHost.Dispose(System.Boolean)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.ContentTemplateProperty</span>
+      <span class="xref">System.Windows.Interop.HwndHost.HasFocusWithinCore()</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.ContentTemplateSelectorProperty</span>
+      <span class="xref">System.Windows.Interop.HwndHost.MeasureOverride(System.Windows.Size)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.HasContentProperty</span>
+      <span class="xref">System.Windows.Interop.HwndHost.OnCreateAutomationPeer()</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.AddChild(System.Object)</span>
+      <span class="xref">System.Windows.Interop.HwndHost.OnDpiChanged(System.Windows.DpiScale, System.Windows.DpiScale)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.AddText(System.String)</span>
+      <span class="xref">System.Windows.Interop.HwndHost.OnKeyDown(System.Windows.Input.KeyEventArgs)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.OnContentChanged(System.Object, System.Object)</span>
+      <span class="xref">System.Windows.Interop.HwndHost.OnKeyUp(System.Windows.Input.KeyEventArgs)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.OnContentStringFormatChanged(System.String, System.String)</span>
+      <span class="xref">System.Windows.Interop.HwndHost.OnMnemonicCore(System.Windows.Interop.MSG, System.Windows.Input.ModifierKeys)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.OnContentTemplateChanged(System.Windows.DataTemplate, System.Windows.DataTemplate)</span>
+      <span class="xref">System.Windows.Interop.HwndHost.OnWindowPositionChanged(System.Windows.Rect)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.OnContentTemplateSelectorChanged(System.Windows.Controls.DataTemplateSelector, System.Windows.Controls.DataTemplateSelector)</span>
+      <span class="xref">System.Windows.Interop.HwndHost.RegisterKeyboardInputSinkCore(System.Windows.Interop.IKeyboardInputSink)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.System.Windows.Markup.IAddChild.AddChild(System.Object)</span>
+      <span class="xref">System.Windows.Interop.HwndHost.System.Windows.Interop.IKeyboardInputSink.HasFocusWithin()</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.System.Windows.Markup.IAddChild.AddText(System.String)</span>
+      <span class="xref">System.Windows.Interop.HwndHost.System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System.Windows.Interop.MSG, System.Windows.Input.ModifierKeys)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.Content</span>
+      <span class="xref">System.Windows.Interop.HwndHost.System.Windows.Interop.IKeyboardInputSink.RegisterKeyboardInputSink(System.Windows.Interop.IKeyboardInputSink)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.ContentStringFormat</span>
+      <span class="xref">System.Windows.Interop.HwndHost.System.Windows.Interop.IKeyboardInputSink.TabInto(System.Windows.Input.TraversalRequest)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.ContentTemplate</span>
+      <span class="xref">System.Windows.Interop.HwndHost.System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(System.Windows.Interop.MSG, System.Windows.Input.ModifierKeys)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.ContentTemplateSelector</span>
+      <span class="xref">System.Windows.Interop.HwndHost.System.Windows.Interop.IKeyboardInputSink.TranslateChar(System.Windows.Interop.MSG, System.Windows.Input.ModifierKeys)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.HasContent</span>
+      <span class="xref">System.Windows.Interop.HwndHost.TabIntoCore(System.Windows.Input.TraversalRequest)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.ContentControl.LogicalChildren</span>
+      <span class="xref">System.Windows.Interop.HwndHost.TranslateAcceleratorCore(System.Windows.Interop.MSG, System.Windows.Input.ModifierKeys)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.Control.BackgroundProperty</span>
+      <span class="xref">System.Windows.Interop.HwndHost.TranslateCharCore(System.Windows.Interop.MSG, System.Windows.Input.ModifierKeys)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.Control.BorderBrushProperty</span>
+      <span class="xref">System.Windows.Interop.HwndHost.UpdateWindowPos()</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.Control.BorderThicknessProperty</span>
+      <span class="xref">System.Windows.Interop.HwndHost.WndProc(System.IntPtr, System.Int32, System.IntPtr, System.IntPtr, System.Boolean)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.Control.FontFamilyProperty</span>
+      <span class="xref">System.Windows.Interop.HwndHost.Handle</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.Control.FontSizeProperty</span>
+      <span class="xref">System.Windows.Interop.HwndHost.System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.Control.FontStretchProperty</span>
+      <span class="xref">System.Windows.Interop.HwndHost.DpiChanged</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Controls.Control.FontStyleProperty</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.FontWeightProperty</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.ForegroundProperty</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.HorizontalContentAlignmentProperty</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.IsTabStopProperty</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.MouseDoubleClickEvent</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.PaddingProperty</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.PreviewMouseDoubleClickEvent</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.TabIndexProperty</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.TemplateProperty</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.VerticalContentAlignmentProperty</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.ArrangeOverride(System.Windows.Size)</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.MeasureOverride(System.Windows.Size)</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.OnMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.OnPreviewMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.OnTemplateChanged(System.Windows.Controls.ControlTemplate, System.Windows.Controls.ControlTemplate)</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.ToString()</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.Background</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.BorderBrush</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.BorderThickness</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.FontFamily</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.FontSize</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.FontStretch</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.FontStyle</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.FontWeight</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.Foreground</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.HandlesScrolling</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.HorizontalContentAlignment</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.IsTabStop</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.Padding</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.TabIndex</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.Template</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.VerticalContentAlignment</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.MouseDoubleClick</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.Controls.Control.PreviewMouseDoubleClick</span>
+      <span class="xref">System.Windows.Interop.HwndHost.MessageHook</span>
     </div>
     <div>
       <span class="xref">System.Windows.FrameworkElement.ActualHeightProperty</span>
@@ -400,6 +298,9 @@
     </div>
     <div>
       <span class="xref">System.Windows.FrameworkElement.ArrangeCore(System.Windows.Rect)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ArrangeOverride(System.Windows.Size)</span>
     </div>
     <div>
       <span class="xref">System.Windows.FrameworkElement.BeginInit()</span>
@@ -574,6 +475,9 @@
     </div>
     <div>
       <span class="xref">System.Windows.FrameworkElement.LayoutTransform</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.LogicalChildren</span>
     </div>
     <div>
       <span class="xref">System.Windows.FrameworkElement.Margin</span>
@@ -1132,12 +1036,6 @@
     </div>
     <div>
       <span class="xref">System.Windows.UIElement.OnIsStylusDirectlyOverChanged(System.Windows.DependencyPropertyChangedEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.UIElement.OnKeyDown(System.Windows.Input.KeyEventArgs)</span>
-    </div>
-    <div>
-      <span class="xref">System.Windows.UIElement.OnKeyUp(System.Windows.Input.KeyEventArgs)</span>
     </div>
     <div>
       <span class="xref">System.Windows.UIElement.OnLostFocus(System.Windows.RoutedEventArgs)</span>
@@ -1830,9 +1728,6 @@
       <span class="xref">System.Windows.Media.Visual.IsDescendantOf(System.Windows.DependencyObject)</span>
     </div>
     <div>
-      <span class="xref">System.Windows.Media.Visual.OnDpiChanged(System.Windows.DpiScale, System.Windows.DpiScale)</span>
-    </div>
-    <div>
       <span class="xref">System.Windows.Media.Visual.OnVisualChildrenChanged(System.Windows.DependencyObject, System.Windows.DependencyObject)</span>
     </div>
     <div>
@@ -1970,42 +1865,115 @@
     <div>
       <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BlazorWebView.Wpf.html">BlazorWebView.Wpf</a></h6>
   <h6><strong>Assembly</strong>: BlazorWebView.Wpf.dll</h6>
-  <h5 id="BlazorWebView_Wpf_BlazorWebView_syntax">Syntax</h5>
+  <h5 id="BlazorWebView_Wpf_BlazorNewEdgeWebView_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BlazorWebView : UserControl, IAnimatable, ISupportInitialize, IFrameworkInputElement, IInputElement, IQueryAmbient, IAddChild, IBlazorWebView</code></pre>
-  </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorWebView__ctor.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorWebView.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorWebView.cs/#L47">View Source</a>
-  </span>
-  <a id="BlazorWebView_Wpf_BlazorWebView__ctor_" data-uid="BlazorWebView.Wpf.BlazorWebView.#ctor*"></a>
-  <h4 id="BlazorWebView_Wpf_BlazorWebView__ctor" data-uid="BlazorWebView.Wpf.BlazorWebView.#ctor">BlazorWebView()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="BlazorWebView.Wpf.BlazorWebView.html">BlazorWebView</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BlazorWebView()</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class BlazorNewEdgeWebView : HwndHost, IAnimatable, ISupportInitialize, IFrameworkInputElement, IInputElement, IQueryAmbient, IDisposable, IKeyboardInputSink, IWin32Window, IBlazorWebView</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorWebView_Initialize_System_Action_BlazorWebView_WebViewOptions__.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorWebView.Initialize(System.Action%7BBlazorWebView.WebViewOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorNewEdgeWebView_BuildWindowCore_System_Runtime_InteropServices_HandleRef_.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorNewEdgeWebView.BuildWindowCore(System.Runtime.InteropServices.HandleRef)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorWebView.cs/#L75">View Source</a>
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorNewEdgeWebView.cs/#L172">View Source</a>
   </span>
-  <a id="BlazorWebView_Wpf_BlazorWebView_Initialize_" data-uid="BlazorWebView.Wpf.BlazorWebView.Initialize*"></a>
-  <h4 id="BlazorWebView_Wpf_BlazorWebView_Initialize_System_Action_BlazorWebView_WebViewOptions__" data-uid="BlazorWebView.Wpf.BlazorWebView.Initialize(System.Action{BlazorWebView.WebViewOptions})">Initialize(Action&lt;WebViewOptions&gt;)</h4>
+  <a id="BlazorWebView_Wpf_BlazorNewEdgeWebView_BuildWindowCore_" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView.BuildWindowCore*"></a>
+  <h4 id="BlazorWebView_Wpf_BlazorNewEdgeWebView_BuildWindowCore_System_Runtime_InteropServices_HandleRef_" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView.BuildWindowCore(System.Runtime.InteropServices.HandleRef)">BuildWindowCore(HandleRef)</h4>
+  <div class="markdown level1 summary"><p>Creates the window to be hosted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override HandleRef BuildWindowCore(HandleRef hwndParent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.InteropServices.HandleRef</span></td>
+        <td><span class="parametername">hwndParent</span></td>
+        <td><p>The window handle of the parent window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.InteropServices.HandleRef</span></td>
+        <td><p>The handle to the child Win32 window to create.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Windows.Interop.HwndHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorNewEdgeWebView_DestroyWindowCore_System_Runtime_InteropServices_HandleRef_.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorNewEdgeWebView.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorNewEdgeWebView.cs/#L191">View Source</a>
+  </span>
+  <a id="BlazorWebView_Wpf_BlazorNewEdgeWebView_DestroyWindowCore_" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView.DestroyWindowCore*"></a>
+  <h4 id="BlazorWebView_Wpf_BlazorNewEdgeWebView_DestroyWindowCore_System_Runtime_InteropServices_HandleRef_" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)">DestroyWindowCore(HandleRef)</h4>
+  <div class="markdown level1 summary"><p>Destroys the hosted window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DestroyWindowCore(HandleRef hwnd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.InteropServices.HandleRef</span></td>
+        <td><span class="parametername">hwnd</span></td>
+        <td><p>A structure that contains the window handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Windows.Interop.HwndHost.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorNewEdgeWebView_Initialize_System_Action_BlazorWebView_WebViewOptions__.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorNewEdgeWebView.Initialize(System.Action%7BBlazorWebView.WebViewOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorNewEdgeWebView.cs/#L103">View Source</a>
+  </span>
+  <a id="BlazorWebView_Wpf_BlazorNewEdgeWebView_Initialize_" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView.Initialize*"></a>
+  <h4 id="BlazorWebView_Wpf_BlazorNewEdgeWebView_Initialize_System_Action_BlazorWebView_WebViewOptions__" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView.Initialize(System.Action{BlazorWebView.WebViewOptions})">Initialize(Action&lt;WebViewOptions&gt;)</h4>
   <div class="markdown level1 summary"><p>Initialize the BlazorWebView.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2033,13 +2001,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorWebView_Invoke_System_Action_.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorWebView.Invoke(System.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorNewEdgeWebView_Invoke_System_Action_.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorNewEdgeWebView.Invoke(System.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorWebView.cs/#L97">View Source</a>
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorNewEdgeWebView.cs/#L123">View Source</a>
   </span>
-  <a id="BlazorWebView_Wpf_BlazorWebView_Invoke_" data-uid="BlazorWebView.Wpf.BlazorWebView.Invoke*"></a>
-  <h4 id="BlazorWebView_Wpf_BlazorWebView_Invoke_System_Action_" data-uid="BlazorWebView.Wpf.BlazorWebView.Invoke(System.Action)">Invoke(Action)</h4>
+  <a id="BlazorWebView_Wpf_BlazorNewEdgeWebView_Invoke_" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView.Invoke*"></a>
+  <h4 id="BlazorWebView_Wpf_BlazorNewEdgeWebView_Invoke_System_Action_" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView.Invoke(System.Action)">Invoke(Action)</h4>
   <div class="markdown level1 summary"><p>Invoke a callback on the UI thread.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2067,13 +2035,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorWebView_NavigateToUrl_System_String_.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorWebView.NavigateToUrl(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorNewEdgeWebView_NavigateToUrl_System_String_.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorNewEdgeWebView.NavigateToUrl(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorWebView.cs/#L106">View Source</a>
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorNewEdgeWebView.cs/#L140">View Source</a>
   </span>
-  <a id="BlazorWebView_Wpf_BlazorWebView_NavigateToUrl_" data-uid="BlazorWebView.Wpf.BlazorWebView.NavigateToUrl*"></a>
-  <h4 id="BlazorWebView_Wpf_BlazorWebView_NavigateToUrl_System_String_" data-uid="BlazorWebView.Wpf.BlazorWebView.NavigateToUrl(System.String)">NavigateToUrl(String)</h4>
+  <a id="BlazorWebView_Wpf_BlazorNewEdgeWebView_NavigateToUrl_" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView.NavigateToUrl*"></a>
+  <h4 id="BlazorWebView_Wpf_BlazorNewEdgeWebView_NavigateToUrl_System_String_" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView.NavigateToUrl(System.String)">NavigateToUrl(String)</h4>
   <div class="markdown level1 summary"><p>Navigate to the specified URL.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2101,13 +2069,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorWebView_SendMessage_System_String_.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorWebView.SendMessage(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorNewEdgeWebView_SendMessage_System_String_.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorNewEdgeWebView.SendMessage(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorWebView.cs/#L115">View Source</a>
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorNewEdgeWebView.cs/#L149">View Source</a>
   </span>
-  <a id="BlazorWebView_Wpf_BlazorWebView_SendMessage_" data-uid="BlazorWebView.Wpf.BlazorWebView.SendMessage*"></a>
-  <h4 id="BlazorWebView_Wpf_BlazorWebView_SendMessage_System_String_" data-uid="BlazorWebView.Wpf.BlazorWebView.SendMessage(System.String)">SendMessage(String)</h4>
+  <a id="BlazorWebView_Wpf_BlazorNewEdgeWebView_SendMessage_" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView.SendMessage*"></a>
+  <h4 id="BlazorWebView_Wpf_BlazorNewEdgeWebView_SendMessage_System_String_" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView.SendMessage(System.String)">SendMessage(String)</h4>
   <div class="markdown level1 summary"><p>Send a message to javascript.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2135,13 +2103,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorWebView_ShowMessage_System_String_System_String_.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorWebView.ShowMessage(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorNewEdgeWebView_ShowMessage_System_String_System_String_.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorNewEdgeWebView.ShowMessage(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorWebView.cs/#L125">View Source</a>
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorNewEdgeWebView.cs/#L159">View Source</a>
   </span>
-  <a id="BlazorWebView_Wpf_BlazorWebView_ShowMessage_" data-uid="BlazorWebView.Wpf.BlazorWebView.ShowMessage*"></a>
-  <h4 id="BlazorWebView_Wpf_BlazorWebView_ShowMessage_System_String_System_String_" data-uid="BlazorWebView.Wpf.BlazorWebView.ShowMessage(System.String,System.String)">ShowMessage(String, String)</h4>
+  <a id="BlazorWebView_Wpf_BlazorNewEdgeWebView_ShowMessage_" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView.ShowMessage*"></a>
+  <h4 id="BlazorWebView_Wpf_BlazorNewEdgeWebView_ShowMessage_System_String_System_String_" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView.ShowMessage(System.String,System.String)">ShowMessage(String, String)</h4>
   <div class="markdown level1 summary"><p>Show a native dialog for the platform with the specified message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2177,12 +2145,12 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorWebView_OnWebMessageReceived.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorWebView.OnWebMessageReceived%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorNewEdgeWebView_OnWebMessageReceived.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorNewEdgeWebView.OnWebMessageReceived%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorWebView.cs/#L58">View Source</a>
+    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorNewEdgeWebView.cs/#L97">View Source</a>
   </span>
-  <h4 id="BlazorWebView_Wpf_BlazorWebView_OnWebMessageReceived" data-uid="BlazorWebView.Wpf.BlazorWebView.OnWebMessageReceived">OnWebMessageReceived</h4>
+  <h4 id="BlazorWebView_Wpf_BlazorNewEdgeWebView_OnWebMessageReceived" data-uid="BlazorWebView.Wpf.BlazorNewEdgeWebView.OnWebMessageReceived">OnWebMessageReceived</h4>
   <div class="markdown level1 summary"><p>Event that is fired when a web message is received from javascript.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2222,7 +2190,13 @@
       <span class="xref">System.Windows.Markup.IQueryAmbient</span>
   </div>
   <div>
-      <span class="xref">System.Windows.Markup.IAddChild</span>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">System.Windows.Interop.IKeyboardInputSink</span>
+  </div>
+  <div>
+      <span class="xref">System.Windows.Interop.IWin32Window</span>
   </div>
   <div>
       <a class="xref" href="BlazorWebView.IBlazorWebView.html">IBlazorWebView</a>
@@ -2235,10 +2209,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorWebView.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorWebView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/jspuij/BlazorWebView/new/master/apiSpec/new?filename=BlazorWebView_Wpf_BlazorNewEdgeWebView.md&amp;value=---%0Auid%3A%20BlazorWebView.Wpf.BlazorNewEdgeWebView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorWebView.cs/#L35" class="contribution-link">View Source</a>
+                    <a href="https://github.com/jspuij/BlazorWebView/blob/master/src/BlazorWebView.Wpf/BlazorNewEdgeWebView.cs/#L33" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
