@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>BlazorWebView documentation. </title>
+    <title>BlazorWebView </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="BlazorWebView documentation. ">
+    <meta name="title" content="BlazorWebView ">
     <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,9 +67,8 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="blazorwebview">BlazorWebView</h1>
 
-<img src="../logo.svg" alt="BlazorWebView" height="120" align="right">
-<h1 id="blazorwebview-documentation">BlazorWebView documentation.</h1>
 <p>Blazor traditionally runs on dotnet core for Server Side Blazor and runs the Mono runtime on webassembly inside the
 browser for client side blazor. For desktop and mobile applications this is cumbersome as it requires a bundled web-
 server and retains the disadvantages of SSB or CSB respectively.</p>
@@ -98,6 +97,59 @@ on the following platforms:</p>
 <p>The advantage of using Xamarin on mobile platforms is that you can use the
 <a href="https://docs.microsoft.com/en-us/xamarin/essentials/">Xamarin Essentials</a> library to interact with mobile platform
 API's easily from .NET.</p>
+<h2 id="get-started">Get Started</h2>
+<p>The instructions to get started vary depending on the platform you want to create the application for. It's best
+to follow the tutorials for every platform. They are available below:</p>
+<ul>
+<li><a href="androidtutorial.md">Xamarin Android</a></li>
+<li><a href="iostutorial.md">Xamarin iOS</a></li>
+<li><a href="mactutorial.md">Xamarin Mac</a></li>
+<li><a href="wpftutorial.md">WPF</a></li>
+</ul>
+<h3 id="install-the-nugets">Install the nugets</h3>
+<p>In general you need to add one of the nuget packages specific for your platform to your project:</p>
+<pre><code>PM&gt; Install-Package BlazorWebView.Android
+
+# OR
+PM&gt; Install-Package BlazorWebView.iOS
+
+# OR
+PM&gt; Install-Package BlazorWebView.Mac
+
+# OR
+PM&gt; Install-Package BlazorWebView.Wpf
+</code></pre>
+<h3 id="add-blazorwebview-to-your-activityview-viewcontrollerview-or-window">Add BlazorWebView to your Activity/View, ViewController/View, or Window</h3>
+<p>Next add the BlazorWebView (it's named like this in every package) to your Activity / View (for Android),
+ViewController / View (for iOS and Mac), or to your window Xaml. Make sure that the BlazorWebView gets an
+identifier so we can reference it in a code behind file.</p>
+<h3 id="wire-up-your-blazor-project-to-the-blazorwebview">Wire up your blazor project to the BlazorWebView</h3>
+<p>First, we need to adapt the url to the blazor javascript. It will be loaded from the nuget assembly by
+referencing a dedicated scheme. The Uri to the blazor javascript is:</p>
+<pre><code>framework://blazor.desktop.js
+</code></pre>
+<p>The rest of the Urls are relative urls. A complete example index.html file provided below:</p>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+    &lt;title&gt;MyDesktopApp&lt;/title&gt;
+    &lt;base href=&quot;/&quot; /&gt;
+    &lt;link href=&quot;css/bootstrap/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
+    &lt;link href=&quot;css/site.css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;app&gt;Loading...&lt;/app&gt;
+
+    &lt;script src=&quot;framework://blazor.desktop.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Finally we initialize the BlazorWebView from codebehind using the BlazorWebViewHost static class like this:</p>
+<pre><code class="lang-csharp">BlazorWebViewHost.Run&lt;Startup&gt;(this.blazorWebView, &quot;wwwroot/index.html&quot;);
+</code></pre>
+<p>That's it! That wasn't too difficult, was it?</p>
 </article>
           </div>
           
