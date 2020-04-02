@@ -115,6 +115,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "pages/changelog.md",
+      "output": {
+        ".html": {
+          "relative_path": "pages/changelog.html",
+          "hash": "P4C+22zvwKhR1PehroEUOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "log_codes": [
         "InvalidFileLink"
       ],
@@ -150,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "pages/toc.html",
-          "hash": "1X2xV9lyTv0uKjMcZ+aiRw=="
+          "hash": "460CrBMUIH0xNYLwSw2AZA=="
         }
       },
       "is_incremental": false,
@@ -519,7 +531,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
+          "total_file_count": 4,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
