@@ -117,6 +117,9 @@ WebAssembly project. We do this by adding a new project to the solution first:</
 <li role="presentation">
 <a href="#tabpanel_CeZOj-G++Q-1_addpage-3" role="tab" aria-controls="tabpanel_CeZOj-G++Q-1_addpage-3" data-tab="addpage-3" tabindex="-1">Add Project 3</a>
 </li>
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q-1_addpage-4" role="tab" aria-controls="tabpanel_CeZOj-G++Q-1_addpage-4" data-tab="addpage-4" tabindex="-1">Add Project 4</a>
+</li>
 </ul>
 <section id="tabpanel_CeZOj-G++Q-1_addpage-1" role="tabpanel" data-tab="addpage-1">
 
@@ -130,9 +133,15 @@ WebAssembly project. We do this by adding a new project to the solution first:</
 
 <p><img src="../images/addnewproject3.png" alt="Add New project, page 3"></p>
 </section>
+<section id="tabpanel_CeZOj-G++Q-1_addpage-4" role="tabpanel" data-tab="addpage-4" aria-hidden="true" hidden="hidden">
+
+<p><img src="../images/addnewproject4.png" alt="Add New project, page 4"></p>
+</section>
 </div>
 
-<p>We can delete all content that has been generated as an example in the RCL project,
+<p>Do not tick the option to support Pages and Views, as this is for Razor Pages, a server
+side technology that has nothing to do with Blazor.
+We can delete all content that has been generated as an example in the RCL project,
 as we will move over the content from the WebAssembly project shortly. Don't delete
 the wwwroot folder itself, we will use that later on.</p>
 <p>Finally add a reference from the WebAssembly project to the shared project:</p>
@@ -169,12 +178,27 @@ the WebAssembly project:</li>
 @using Microsoft.AspNetCore.Components.Web
 @using Microsoft.JSInterop
 &lt;!-- change these last two lines to match the namespaces of your shared library !--&gt;
-@using BlazorWebView.Tutorial
-@using BlazorWebView.Tutorial.Shared
+@using BlazorWebViewTutorial.Shared
+@using BlazorWebViewTutorial.Shared.Shared
 </code></pre>
 <ul>
 <li>Next add a nuget reference to <code>Microsoft.AspNetCore.Blazor.HttpClient</code> to the shared project
 as well (It is already in the webassembly project).</li>
+<li>Now we have to change the App.Razor file in the shard project to point to the right AppAssembly,
+because Program lives in the WebAssembly project, so change <code>Program</code> into <code>App</code>:</li>
+</ul>
+<pre><code class="lang-cshtml-razor">&lt;Router AppAssembly=&quot;@typeof(App).Assembly&quot;&gt;
+    &lt;Found Context=&quot;routeData&quot;&gt;
+        &lt;RouteView RouteData=&quot;@routeData&quot; DefaultLayout=&quot;@typeof(MainLayout)&quot; /&gt;
+    &lt;/Found&gt;
+    &lt;NotFound&gt;
+        &lt;LayoutView Layout=&quot;@typeof(MainLayout)&quot;&gt;
+            &lt;p&gt;Sorry, there's nothing at this address.&lt;/p&gt;
+        &lt;/LayoutView&gt;
+    &lt;/NotFound&gt;
+&lt;/Router&gt;
+</code></pre>
+<ul>
 <li>Finally we add a using statement to the Program.cs folder in the webassembly project to
 resolve the App class at a new location:</li>
 </ul>
@@ -184,10 +208,11 @@ using System.Threading.Tasks;
 using System.Text;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-// Add this line and have it match the location of the App class.
-using BlazorWebView.Shared;
 
-namespace BlazorWebView.Tutorial
+// Add this line and have it match the location of the App class.
+using BlazorWebViewTutorial.Shared;
+
+namespace BlazorWebViewTutorial.Client
 {
     public class Program
     {
@@ -208,21 +233,48 @@ namespace BlazorWebView.Tutorial
 <p>Click Debug or press F5 to build and run the project. A browser page will open that looks like this:</p>
 <p><img src="../images/browsererror.png" alt="browser error"></p>
 <p>This is because the files we have moved from the webassembly wwwroot folder to the shared project
-wwwroot folder are not copied to the output directory. This is why blazor webassembly cannot find
-them. The easiest way to solve this, is by editing the shared .csproj file directly. You can do
-this by right-clicking the file in the solution explorer and choosing &quot;Edit project file&quot; from
-the context menu.
-Next add the following content inside the <code>&lt;project&gt;</code> tag to change the copy behaviour for all
-content inside the wwwroot folder:</p>
-<pre><code class="lang-xml">  &lt;ItemGroup&gt;
-    &lt;Content Update=&quot;wwwroot\**\*&quot;&gt;
-      &lt;CopyToOutputDirectory&gt;PreserveNewest&lt;/CopyToOutputDirectory&gt;
-    &lt;/Content&gt;
-  &lt;/ItemGroup&gt;
+wwwroot folder cannot be loaded from the location where the were before. These items are called
+<a href="https://docs.microsoft.com/en-us/aspnet/core/razor-pages/ui-class?view=aspnetcore-3.1&amp;tabs=visual-studio#create-an-rcl-with-static-assets">Static Assets</a>
+and they are loaded from a special location by Blazor.</p>
+<blockquote>
+<p>The files included in the wwwroot folder of the RCL are exposed to either the RCL or the consuming
+app under the prefix _content/{LIBRARY NAME}/. For example, a library named Razor.Class.Lib results
+in a path to static content at _content/Razor.Class.Lib/.
+When producing a NuGet package and the assembly name isn't the same as the package ID, use the
+package ID for {LIBRARY NAME}.</p>
+</blockquote>
+<p>This is why blazor webassembly cannot find them. The easiest way to solve this, is by editing the index.html file
+in the webassembly project. Make sure it looks like the listing below:</p>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+    &lt;title&gt;BlazorWebViewTutorial.Client&lt;/title&gt;
+    &lt;base href=&quot;/&quot; /&gt;
+    &lt;!-- Add _content/BlazorWebViewTutorial.Shared below --&gt;
+    &lt;link href=&quot;_content/BlazorWebViewTutorial.Shared/css/bootstrap/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
+    &lt;link href=&quot;_content/BlazorWebViewTutorial.Shared/css/site.css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;app&gt;Loading...&lt;/app&gt;
+
+    &lt;div id=&quot;blazor-error-ui&quot;&gt;
+        An unhandled error has occurred.
+        &lt;a href=&quot;&quot; class=&quot;reload&quot;&gt;Reload&lt;/a&gt;
+        &lt;a class=&quot;dismiss&quot;&gt;🗙&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;script src=&quot;_framework/blazor.webassembly.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
 </code></pre>
 <p>Press F5 again. The project should now build, run and the sample should be in working order.
 Congratulations! You've completed the preparations and are ready to move on to one of the
 tutorials. The source code so far is in this branch:</p>
+<p><a href="https://github.com/jspuij/BlazorWebViewTutorial/tree/1_prepare">https://github.com/jspuij/BlazorWebViewTutorial/tree/1_prepare</a></p>
 </article>
           </div>
           

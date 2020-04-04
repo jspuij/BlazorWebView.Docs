@@ -38,6 +38,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/addnewproject4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/addnewproject4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/browsererror.png",
       "output": {
         "resource": {
@@ -135,7 +146,7 @@
       "output": {
         ".html": {
           "relative_path": "pages/index.html",
-          "hash": "V80VMzus6wfp9c+jUT7ZQw=="
+          "hash": "EspzG5JqJTrn9UOToDozdA=="
         }
       },
       "is_incremental": false,
@@ -147,7 +158,7 @@
       "output": {
         ".html": {
           "relative_path": "pages/prepare.html",
-          "hash": "NnDiJOSZkk6qsK/fhSKidg=="
+          "hash": "zWphjYTrlszmOey9SvZh3w=="
         }
       },
       "is_incremental": false,
