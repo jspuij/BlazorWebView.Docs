@@ -5,6 +5,39 @@
   "files": [
     {
       "type": "Resource",
+      "source_relative_path": "images/addandroidproject1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/addandroidproject1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/addandroidproject2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/addandroidproject2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/addandroidproject3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/addandroidproject3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/addnewproject1.png",
       "output": {
         "resource": {
@@ -49,6 +82,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/androidemulator.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/androidemulator.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/browsererror.png",
       "output": {
         "resource": {
@@ -64,6 +108,17 @@
       "output": {
         "resource": {
           "relative_path": "images/builderrors.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/buildproperties.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/buildproperties.png"
         }
       },
       "is_incremental": false,
@@ -127,11 +182,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "pages/androidtutorial.md",
+      "output": {
+        ".html": {
+          "relative_path": "pages/androidtutorial.html",
+          "hash": "f3KrVq08OjiROg1eafO8Sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "pages/changelog.md",
       "output": {
         ".html": {
           "relative_path": "pages/changelog.html",
-          "hash": "uGhqOi4gB2nwOM6qIgNIAg=="
+          "hash": "e1k2MMZeOGpL4cJJrlLeTA=="
         }
       },
       "is_incremental": false,
@@ -146,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "pages/index.html",
-          "hash": "EspzG5JqJTrn9UOToDozdA=="
+          "hash": "mM7aQyM2pmQ06lgbt7PIeA=="
         }
       },
       "is_incremental": false,
@@ -158,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "pages/prepare.html",
-          "hash": "zWphjYTrlszmOey9SvZh3w=="
+          "hash": "UwI3Pw9h7qX0Pugxgfy2rA=="
         }
       },
       "is_incremental": false,
@@ -173,7 +240,7 @@
       "output": {
         ".html": {
           "relative_path": "pages/toc.html",
-          "hash": "460CrBMUIH0xNYLwSw2AZA=="
+          "hash": "fQnU3LFM82//WfJk+gFosA=="
         }
       },
       "is_incremental": false,
@@ -542,7 +609,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 4,
+          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
