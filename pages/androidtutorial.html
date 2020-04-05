@@ -147,7 +147,7 @@ is limited enough that Blazor works on iOS. You are encouraged to use Newtonsoft
 now if you want to do serialization for HTTP calls and you experience issues.</p>
 </blockquote>
 <p>Lets continue to the next step.</p>
-<h2 id="copy-wwwroot-files">Copy <code>wwwroot</code> Files</h2>
+<h2 id="copy-wwwroot-files">Copy <code>wwwroot</code> Files.</h2>
 <p>We need a <code>wwwroot</code> folder and an <code>index.html</code> for this project as well. Let's copy the wwwroot
 folder from the WebAssembly client project to the Android project. Now that we have added
 the wwwroot folder with the index.html file (and favicon to prevent a 404), we have to change
@@ -165,7 +165,7 @@ Android Assets during the build process. It has to be zipped because Android Ass
 very limited in their filename and folder structure. At first start of the application,
 the zipfile is extracted to the personal data folder of the app.</p>
 </blockquote>
-<h2 id="change-indexhtml">Change <code>index.html</code></h2>
+<h2 id="change-indexhtml">Change <code>index.html</code>.</h2>
 <p>We need to change the name and location where the framework script is loaded from.
 BlazorWebView will intercept URLs loaded from the <code>framework://</code> scheme and present the
 content directly to the native operating webview. We will load the Blazor JavaScript
