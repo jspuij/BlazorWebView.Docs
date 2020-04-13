@@ -8,7 +8,7 @@
     <title>BlazorWebView Android Tutorial. </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="BlazorWebView Android Tutorial. ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.52.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -157,9 +157,9 @@ the properties of these files:</p>
 <li>Change <strong>Copy To Output directory</strong> from <code>Do not Copy</code> to <code>Copy if newer</code></li>
 </ul>
 <p>The project should look like this:</p>
-<p><img src="../images/buildproperties.png" alt="Project and Build Properties"></p>
+<p><img src="../images/androidbuildproperties.png" alt="Project and Build Properties"></p>
 <blockquote>
-<p>The wwwroot folder from the Android Project will be combined with the Static Sssets of
+<p>The wwwroot folder from the Android Project will be combined with the Static Assets of
 the Razor Class Libraries into a zipfile called wwwroot.zip. This zipfile is added to the
 Android Assets during the build process. It has to be zipped because Android Assets are
 very limited in their filename and folder structure. At first start of the application,
@@ -393,7 +393,7 @@ Blazor application:</p>
 <p>When you navigate to the <code>Fetch-Data</code> Page, you'll notice that the data is no
 longer shown. The data is included inside the Android APK, but the <code>HttpClient</code>
 that we have added to the DI container is outside of the Browser and won't be
-intercepted by the BlazorWebView. Let's get it from Github directly
+intercepted by the BlazorWebView. Let's get the data from Github directly
 to solve this issue. Change the <code>Oninitialized</code> method inside <code>FetchData.Razor</code>
 component in the shared RCL project to read:</p>
 <pre><code class="lang-csharp">    protected override async Task OnInitializedAsync()

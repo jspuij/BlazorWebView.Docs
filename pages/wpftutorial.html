@@ -8,7 +8,7 @@
     <title>BlazorWebView WPF Tutorial. </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="BlazorWebView WPF Tutorial. ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.52.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -69,7 +69,307 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="blazorwebview-wpf-tutorial">BlazorWebView WPF Tutorial.</h1>
 
-<p>Coming soon!</p>
+<p>We will base our WPF App on the <a href="prepare.html">preparations</a> we have done before.
+The preparations involved bringing over our Blazor App into a Razor Class Library (RCL).
+This way we can share all of the application code between all the native apps we are
+creating in these tutorials. The code for the start can be found in
+<a href="https://github.com/jspuij/BlazorWebViewTutorial/tree/1_prepare">this branch</a>.</p>
+<h2 id="add-a-wpf-net-core-project">Add a WPF .NET Core Project.</h2>
+<p>Let's start by adding a WPF .NET Core Project to the solution. Perform the following
+steps to add a new WPF Project to the solution. Right click on the solution node in
+the Solution Explorer and select <code>Add</code> -&gt; <code>New project...</code>. This will open the following
+dialogs:</p>
+<div class="tabGroup" id="tabgroup_CeZOj-G++Q">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q_addwpf-1" role="tab" aria-controls="tabpanel_CeZOj-G++Q_addwpf-1" data-tab="addwpf-1" tabindex="0" aria-selected="true">Add WPF Project 1</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q_addwpf-2" role="tab" aria-controls="tabpanel_CeZOj-G++Q_addwpf-2" data-tab="addwpf-2" tabindex="-1">Add WPF Project 2</a>
+</li>
+</ul>
+<section id="tabpanel_CeZOj-G++Q_addwpf-1" role="tabpanel" data-tab="addwpf-1">
+
+<p><img src="../images/addwpfproject1.png" alt="Add WPF Project, Page 1"></p>
+</section>
+<section id="tabpanel_CeZOj-G++Q_addwpf-2" role="tabpanel" data-tab="addwpf-2" aria-hidden="true" hidden="hidden">
+
+<p><img src="../images/addwpfproject2.png" alt="Add WPF Project, Page 2"></p>
+</section>
+</div>
+
+<p>Make sure you choose the .NET Core WPF App Template and not the .NET Framework WPF
+Template for this tutorial. Blazor cannot run on the classic .NET Framework, as it
+is not netstandard 2.1 compatible. Finally, select the &quot;Blank App&quot; Template in the final dialog.
+A new project will be added to the solution. Set the WPF Project as the startup project
+and Press F5 to start the WPF Application and make sure everything works before we start
+adding the Blazor bits to the WPF Project.</p>
+<h2 id="add-references">Add References.</h2>
+<p>We start by adding a reference to the Shared project from the WPF Project. Click
+right on the Dependencies node of the WPF Project and select <code>Add reference...</code>.
+Select the shared RCL Project from the projects list and click &quot;OK&quot;.</p>
+<p>Now that we have references the Shared RCL Project, it's time to install the NuGet
+package for the BlazorWebView for WPF. Enter the following lines into the Package
+Console:</p>
+<pre><code>PM&gt; Install-Package BlazorWebView.Wpf -IncludePrerelease
+</code></pre>
+<p>This should install the package. We need an <code>HttpClient</code> for this platform,
+so we install <code>System.Net.Http</code> from NuGet:</p>
+<pre><code>PM&gt; Install-Package System.Net.Http
+</code></pre>
+<p>Build the project to make sure that there are no warnings or errors. Lets continue to the next step.</p>
+<h2 id="copy-wwwroot-files">Copy <code>wwwroot</code> Files.</h2>
+<p>We need a <code>wwwroot</code> folder and an <code>index.html</code> for this project as well. Let's copy the wwwroot
+folder from the WebAssembly client project to the WPF project. Now that we have added
+the wwwroot folder with the index.html file (and favicon to prevent a 404), we have to change
+the properties of these files:</p>
+<ul>
+<li>Change <strong>BuildAction</strong> from <code>Content</code> to <code>None</code></li>
+<li>Change <strong>Copy To Output directory</strong> from <code>Do not Copy</code> to <code>Copy if newer</code></li>
+</ul>
+<p>The project should look like this:</p>
+<p><img src="../images/wpfbuildproperties.png" alt="Project and Build Properties"></p>
+<blockquote>
+<p>The wwwroot folder from the WPF Project will be combined with the Static Assets of
+the Razor Class Libraries into a wwwroot folder in the output directory. The Static Assets
+end up in the <code>_content/</code> subfolder.</p>
+</blockquote>
+<h2 id="change-indexhtml">Change <code>index.html</code>.</h2>
+<p>We need to change the name and location where the framework script is loaded from.
+BlazorWebView will intercept URLs loaded from the <code>framework://</code> scheme and present the
+content directly to the native operating webview. We will load the Blazor JavaScript
+file from the following location:</p>
+<p><code>framework://blazor.desktop.js</code></p>
+<p>Change the index.html file inside the wwwroot folder of the WPF Project to read:</p>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+    &lt;title&gt;BlazorWebViewTutorial.Client&lt;/title&gt;
+    &lt;base href=&quot;/&quot; /&gt;
+    &lt;!-- Add _content/BlazorWebViewTutorial.Shared below --&gt;
+    &lt;link href=&quot;_content/BlazorWebViewTutorial.Shared/css/bootstrap/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
+    &lt;link href=&quot;_content/BlazorWebViewTutorial.Shared/css/site.css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;app&gt;Loading...&lt;/app&gt;
+
+    &lt;div id=&quot;blazor-error-ui&quot;&gt;
+        An unhandled error has occurred.
+        &lt;a href=&quot;&quot; class=&quot;reload&quot;&gt;Reload&lt;/a&gt;
+        &lt;a class=&quot;dismiss&quot;&gt;🗙&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- change the script location --&gt;
+    &lt;script src=&quot;framework://blazor.desktop.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+<h2 id="prepare-the-main-window">Prepare the Main Window.</h2>
+<p>The WPF App has a single window that is called MainWindow. It consists of two
+parts:</p>
+<ul>
+<li>A XAML file called &quot;MainWindow.xaml&quot; inside the root folder of the project.</li>
+<li>The &quot;MainWindow.xaml.cs&quot; file in the file behind the &quot;MainWindow.xaml&quot; file.</li>
+</ul>
+<p>We need to update the first to add the &quot;BlazorWebView&quot; control to the window, then we
+update the second one to wire up the BlazorWebView to show our Blazor App.</p>
+<h3 id="add-the-blazorwebview-control">Add the BlazorWebView Control.</h3>
+<p>Open the &quot;MainWindow.xaml&quot; file by double clicking it. We need to add a Control to
+it, where the Blazor content will be rendered. The file should read like this when done:</p>
+<pre><code class="lang-xml">&lt;Window x:Class=&quot;BlazorWebViewTutorial.WpfApp.MainWindow&quot;
+        xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+        xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+        xmlns:d=&quot;http://schemas.microsoft.com/expression/blend/2008&quot;
+        xmlns:mc=&quot;http://schemas.openxmlformats.org/markup-compatibility/2006&quot;
+        xmlns:local=&quot;clr-namespace:BlazorWebViewTutorial.WpfApp&quot;
+        xmlns:blazor=&quot;clr-namespace:BlazorWebView.Wpf;assembly=BlazorWebView.Wpf&quot;
+        mc:Ignorable=&quot;d&quot;
+        Title=&quot;MainWindow&quot; Height=&quot;450&quot; Width=&quot;800&quot; ContentRendered=&quot;Window_ContentRendered&quot; Closing=&quot;Window_Closing&quot;&gt;
+    &lt;Grid&gt;
+        &lt;blazor:BlazorWebView x:Name=&quot;BlazorWebView&quot; /&gt;
+    &lt;/Grid&gt;
+&lt;/Window&gt;
+</code></pre>
+<p>To be able to use the control, we first have to import the types into a Xaml namespace, which
+is done by adding the <code>xmlns:blazor=&quot;clr-namespace:BlazorWebView.Wpf;assembly=BlazorWebView.Wpf&quot;</code>
+attribute to the Window tag.
+We have added the Control with the type <code>blazor:BlazorWebView</code>, that matches
+its parent in height and width, and we have given it the <code>BlazorWebView</code> Name. WPF will automatically
+create a property with that name on the <code>MainWindow</code> class.</p>
+<p>We have also added two event handlers to the Window class:</p>
+<ul>
+<li><strong>Windows_ContentRendered:</strong> This event will be used to initialize Blazor. Unfortunately
+it has to be an event that occurs after the HwndHost (that hosts the native edge window) has initialized.
+Putting the initialization code in an event handler that occurs earlier will result in exceptions.</li>
+<li><strong>Window_Closing:</strong> This event will be used to tear down Blazor.</li>
+</ul>
+<p>If you double click the event handler in the Property Window of the WPF Designer, Visual Studio will create
+the event handlers automatically in the <code>MainWindow.xaml.cs</code> file.
+Close the Designer and build the project, it should still build.</p>
+<h3 id="wire-up-the-blazorwebview-control">Wire up the BlazorWebView Control.</h3>
+<p>Open the MainWindow.xaml.cs file in the Text Editor. First we need to add two namespaces
+<em>inside</em> the namespace of the file (to avoid naming conflicts) like so:</p>
+<pre><code class="lang-csharp">namespace BlazorWebViewTutorial.WpfApp
+{
+    // add usings here
+    using BlazorWebView.Wpf;
+    using BlazorWebView;
+</code></pre>
+<p>To be able to dispose of the BlazorWebViewHost and to signal that we have initialized Blazor
+we add two private fields to the class:</p>
+<pre><code class="lang-csharp">    public partial class MainWindow : Window
+    {
+        private IDisposable disposable;
+        private bool initialized = false;
+</code></pre>
+<p>Now, we are ready to initialize Blazor, but only once!
+We do this by adding the following two statements to the <code>Window_ContentRendered</code> method of the class:</p>
+<pre><code class="lang-csharp">            if (!this.initialized)
+            {
+                this.initialized = true;
+                // run blazor.
+                this.disposable = BlazorWebViewHost.Run&lt;Startup&gt;(this.BlazorWebView, &quot;wwwroot/index.html&quot;);
+            }
+</code></pre>
+<p>The if-statement will make sure that we only initialize the BlazorWebView Control once.
+The second inner line will start Blazor. We'll take it apart step by step, to see what is going on:</p>
+<ul>
+<li>The result of the assignment is a Disposable instance that can be used to tear down and cleanup blazor. We should save it
+and call dispose when the Window is destroyed.</li>
+<li>We start Blazor by calling the Run method on the <code>BlazorWebViewHost</code> static class. The run method takes a Generic type that
+specifies the Startup class that will initialize Blazor. We still use a Startup class, although Blazor WebAssembly has moved
+away from it. This might change in the future, but for now we keep the Startup class. We will define a Startup class in the
+next chapter.</li>
+<li>The first argument to the run method is the <code>IBlazorWebView</code> instance for the platform that we will use. In this case, it's
+the BlazorWebView instance that we have added to the Window.</li>
+<li>The second argument is the relative path to the <code>index.html</code> file inside the project. It usually is index.html and it has
+to be the <code>wwwroot</code> folder.</li>
+</ul>
+<p>We have to make sure that we clean up nicely when the activity is destroyed, so we add the following code to the <code>Window_Closing</code>
+method:</p>
+<pre><code class="lang-csharp">            if (this.disposable != null)
+            {
+                this.disposable.Dispose();
+                this.disposable = null;
+            }
+</code></pre>
+<p>Now we need to resolve some usings, but after we have done this the final version of the <code>MainActivity.cs</code> should look like this:</p>
+<pre><code class="lang-csharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace BlazorWebViewTutorial.WpfApp
+{
+    // add usings here
+    using BlazorWebView.Wpf;
+    using BlazorWebView;
+
+    /// &lt;summary&gt;
+    /// Interaction logic for MainWindow.xaml
+    /// &lt;/summary&gt;
+    public partial class MainWindow : Window
+    {
+        private IDisposable disposable;
+        private bool initialized = false;
+
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void Window_ContentRendered(object sender, EventArgs e)
+        {
+            if (!this.initialized)
+            {
+                this.initialized = true;
+                // run blazor.
+                this.disposable = BlazorWebViewHost.Run&lt;Startup&gt;(this.BlazorWebView, &quot;wwwroot/index.html&quot;);
+            }
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (this.disposable != null)
+            {
+                this.disposable.Dispose();
+                this.disposable = null;
+            }
+        }
+    }
+}
+</code></pre>
+<p>Well done, you've implemented the MainWindow, so we can move on to the final bit of this tutorial, which
+is implementing the <code>Startup</code> class.</p>
+<h2 id="implement-the-startup-class">Implement the Startup Class.</h2>
+<p>We have to wire up the Blazor Dependency Injection and define the root App class for Blazor to be able to run.
+This Startup class closely resembles the AspnetCore default startup class for a web application.
+We could define it in the Shared RCL Project, but as it most likely will contain DI registrations specific to
+the platform, a better place is the WPF Project. Let's add the following class to the WPF Project:</p>
+<pre><code class="lang-csharp">using System.Net.Http;
+
+using BlazorWebView;
+using BlazorWebViewTutorial.Shared;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace BlazorWebViewTutorial.WpfApp
+{
+    public class Startup
+    {
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddScoped&lt;HttpClient&gt;();
+        }
+
+        /// &lt;summary&gt;
+        /// Configure the app.
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;app&quot;&gt;The application builder for apps.&lt;/param&gt;
+        public void Configure(ApplicationBuilder app)
+        {
+            app.AddComponent&lt;Shared.App&gt;(&quot;app&quot;);
+        }
+    }
+}
+</code></pre>
+<p>The startup class has two methods. The first method configures the services
+for the DI container. We add an <code>HttpClient</code> from System.Net.Http as the
+WPF Platform does not come with a built-in one.</p>
+<p>The second method is the configuration for the platform. The method accepts
+an <code>ApplicationBuilder</code> that can be used to add the root component for the
+app.</p>
+<p>Press F5 to build and run the project. You should be greeted by a familiar
+Blazor application:</p>
+<p><img src="../images/wpfapp.png" alt="WPF app"></p>
+<h2 id="fix-the-last-runtime-issue">Fix the Last Runtime Issue.</h2>
+<p>When you navigate to the <code>Fetch-Data</code> Page, you'll notice that the data is no
+longer shown. The data is included inside the WPF App, but the <code>HttpClient</code>
+that we have added to the DI container is outside of the Browser and won't be
+intercepted by the BlazorWebView. Let's get the data from Github directly
+to solve this issue. Change the <code>Oninitialized</code> method inside <code>FetchData.Razor</code>
+component in the shared RCL project to read:</p>
+<pre><code class="lang-csharp">    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await Http.GetJsonAsync&lt;WeatherForecast[]&gt;(&quot;https://raw.githubusercontent.com/jspuij/BlazorWebViewTutorial/master/BlazorWebViewTutorial.Shared/wwwroot/sample-data/weather.json&quot;);
+    }
+</code></pre>
+<p>The WPF App should now be fully functioning. The source for the WPF App
+is in this branch:</p>
+<p><a href="https://github.com/jspuij/BlazorWebViewTutorial/tree/5_wpf">https://github.com/jspuij/BlazorWebViewTutorial/tree/5_wpf</a></p>
 </article>
           </div>
           
