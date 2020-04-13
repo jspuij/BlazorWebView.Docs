@@ -74,6 +74,12 @@ The preparations involved bringing over our Blazor App into a Razor Class Librar
 This way we can share all of the application code between all the native apps we are
 creating in these tutorials. The code for the start can be found in
 <a href="https://github.com/jspuij/BlazorWebViewTutorial/tree/1_prepare">this branch</a>.</p>
+<blockquote>
+<p>Due to the Coronavirus Edge 82 (based on Chrome 82) has not been released. This is
+unfortunate, because this project has been upgraded to the latest Edge SDK in anticipation
+of its release. For now you can use this Control with the Dev / Canary builds of Edge, or
+use it with the old Edge. It will fall back to the old Edge automatically.</p>
+</blockquote>
 <h2 id="add-a-wpf-net-core-project">Add a WPF .NET Core Project.</h2>
 <p>Let's start by adding a WPF .NET Core Project to the solution. Perform the following
 steps to add a new WPF Project to the solution. Right click on the solution node in
@@ -200,6 +206,11 @@ attribute to the Window tag.
 We have added the Control with the type <code>blazor:BlazorWebView</code>, that matches
 its parent in height and width, and we have given it the <code>BlazorWebView</code> Name. WPF will automatically
 create a property with that name on the <code>MainWindow</code> class.</p>
+<blockquote>
+<p>The BlazorWebView Control first tries to start the new Edge (Chromium based) Edge. If it's not encountered
+the BlazorWebView Control will fall back to the old Edge control. If this is not desired you can use the
+<code>BlazorNewEdgeWebView</code> and <code>BlazorOldEdgeWebView</code> Controls respectively.</p>
+</blockquote>
 <p>We have also added two event handlers to the Window class:</p>
 <ul>
 <li><strong>Windows_ContentRendered:</strong> This event will be used to initialize Blazor. Unfortunately
