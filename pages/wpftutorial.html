@@ -108,8 +108,27 @@ dialogs:</p>
 Template for this tutorial. Blazor cannot run on the classic .NET Framework, as it
 is not netstandard 2.1 compatible. Finally, select the &quot;Blank App&quot; Template in the final dialog.
 A new project will be added to the solution. Set the WPF Project as the startup project
-and Press F5 to start the WPF Application and make sure everything works before we start
-adding the Blazor bits to the WPF Project.</p>
+and Press F5 to start the WPF Application and make sure everything works before we add a manifest
+and start adding the Blazor bits to the WPF Project.</p>
+<h2 id="create-an-application-manifest">Create an Application Manifest</h2>
+<p>To support DPI awareness on all supported Windows Versions we need to add an Application Manifest
+file to the project. To add an app.manifest:</p>
+<ul>
+<li>Right click on your project folder, click Add -&gt; New Item</li>
+<li>Click on General in the left pane, and chose Application Manifest File.</li>
+<li>Add the following snippet of XML in place of the sample DPI Awareness XML:</li>
+</ul>
+<pre><code class="lang-xml">  &lt;application xmlns=&quot;urn:schemas-microsoft-com:asm.v3&quot;&gt;
+    &lt;windowsSettings&gt;
+      &lt;dpiAware xmlns=&quot;http://schemas.microsoft.com/SMI/2005/WindowsSettings&quot;&gt;true&lt;/dpiAware&gt;
+      &lt;dpiAwareness xmlns=&quot;http://schemas.microsoft.com/SMI/2016/WindowsSettings&quot;&gt;
+        PerMonitorV2
+      &lt;/dpiAwareness&gt;
+    &lt;/windowsSettings&gt;
+  &lt;/application&gt;
+</code></pre>
+<p>This makes sure that we support System default DPI awareness on Windows 7 and Per Monitor
+DPI awareness on Windows 10.</p>
 <h2 id="add-references">Add References.</h2>
 <p>We start by adding a reference to the Shared project from the WPF Project. Click
 right on the Dependencies node of the WPF Project and select <code>Add reference...</code>.
