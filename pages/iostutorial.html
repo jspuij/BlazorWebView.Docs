@@ -69,7 +69,282 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="blazorwebview-ios-tutorial">BlazorWebView iOS Tutorial.</h1>
 
-<p>Coming soon!</p>
+<p>We will base our iOS App on the <a href="prepare.html">preparations</a> we have done before.
+The preparations involved bringing over our Blazor App into a Razor Class Library (RCL).
+This way we can share all of the application code between all the native apps we are
+creating in these tutorials. The code for the start can be found in
+<a href="https://github.com/jspuij/BlazorWebViewTutorial/tree/1_prepare">this branch</a>.</p>
+<h2 id="add-a-xamarin-ios-project">Add a Xamarin iOS Project.</h2>
+<p>Let's start by adding a Xamarin iOS Project to the solution. Perform the following
+steps to add a new iOS Project to the solution. Right click on the solution node in
+the Solution Explorer and select <code>Add</code> -&gt; <code>New project...</code>. This will open the following
+dialogs:</p>
+<div class="tabGroup" id="tabgroup_CeZOj-G++Q">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q_addios-1" role="tab" aria-controls="tabpanel_CeZOj-G++Q_addios-1" data-tab="addios-1" tabindex="0" aria-selected="true">Add iOS Project 1</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q_addios-2" role="tab" aria-controls="tabpanel_CeZOj-G++Q_addios-2" data-tab="addios-2" tabindex="-1">Add iOS Project 2</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q_addios-3" role="tab" aria-controls="tabpanel_CeZOj-G++Q_addios-3" data-tab="addios-3" tabindex="-1">Add iOS Project 3</a>
+</li>
+</ul>
+<section id="tabpanel_CeZOj-G++Q_addios-1" role="tabpanel" data-tab="addios-1">
+
+<p><img src="../images/addiosproject1.png" alt="Add iOS Project, Page 1"></p>
+</section>
+<section id="tabpanel_CeZOj-G++Q_addios-2" role="tabpanel" data-tab="addios-2" aria-hidden="true" hidden="hidden">
+
+<p><img src="../images/addiosproject2.png" alt="Add iOS Project, Page 2"></p>
+</section>
+<section id="tabpanel_CeZOj-G++Q_addios-3" role="tabpanel" data-tab="addios-3" aria-hidden="true" hidden="hidden">
+
+<p><img src="../images/addiosproject3.png" alt="Add iOS Project, Page 3"></p>
+</section>
+</div>
+
+<p>Make sure you choose the Single View iOS App Template and not the Multiplatform Xamarin Forms iOS Template for this tutorial. Enter all other details as indicated.
+A new project will be added to the solution. Set the iOS Project as the startup project
+and Press Cmd+Enter to start the iOS Simulator and make sure everything works before we start adding the Blazor bits to the iOS Project. You can keep the Simulator running, it
+is a lot faster to debug this way if neccessary.</p>
+<blockquote>
+<p>It is possible to use native view in a Xamarin Forms app. It is however outside of
+the scope of this tutorial. More information can be found in the
+<a href="https://docs.microsoft.com/en-us/archive/msdn-magazine/2016/connect/mobile-embedding-native-views-in-your-xamarin-forms-apps">xamarin documentation</a></p>
+</blockquote>
+<h2 id="add-references">Add References.</h2>
+<p>We start by adding a reference to the Shared project from the iOS Project. Click
+right on the references node of the iOS Project and select <code>Add reference...</code>.
+Select the shared RCL Project from the projects list and click &quot;OK&quot;.</p>
+<p>Now that we have references the Shared RCL Project, it's time to install the NuGet
+package for the BlazorWebView for iOS. Select the project in the Solution Explorer,
+and subsequently click <code>Project</code> in the top menu and then <code>Manage NuGet Packages...</code></p>
+<p>Check <code>Show pre-release packages</code> and search for <code>BlazorWebView.iOS'. Add it to the project. This should install the package. We need an</code>HttpClient<code>for this platform, so we install</code>System.Net.Http` from NuGet as well.</p>
+<p>Optionally you can update the Xamarin.Essentials NuGet package in the project, because
+the default template comes with a very old version. Rebuild the project,
+there should be no build errors.</p>
+<blockquote>
+<p>There are a number of build warnings however, warning MSB3277: Found conflicts between different
+versions of &quot;System.Numerics.Vectors&quot; that could not be resolved. This is because of
+the incompatibility of <code>System.Text.Json</code> on Xamarin platforms. Two bugs are tracked
+<a href="https://github.com/xamarin/Essentials/issues/904">here</a> and
+<a href="https://github.com/dotnet/runtime/issues/31326">here</a>. The use of the Serializer luckily
+is limited enough that Blazor works on iOS. You are encouraged to use Newtonsoft JSON for
+now if you want to do serialization for HTTP calls and you experience issues.</p>
+</blockquote>
+<p>Lets continue to the next step.</p>
+<h2 id="copy-wwwroot-files">Copy <code>wwwroot</code> Files.</h2>
+<p>We need a <code>wwwroot</code> folder and an <code>index.html</code> for this project as well. Let's copy the wwwroot
+folder from the WebAssembly client project to the iOS project to the Resources folder. Use alt to copy the folder, it will display a plus-symbol. The project should look like this:</p>
+<p><img src="../images/iosproject.png" alt="Project"></p>
+<blockquote>
+<p>The wwwroot folder from the iOS Project will be combined with the Static Assets of
+the Razor Class Libraries into a folder inside the App-Bundle.</p>
+</blockquote>
+<h2 id="change-indexhtml">Change <code>index.html</code>.</h2>
+<p>We need to change the name and location where the framework script is loaded from.
+BlazorWebView will intercept URLs loaded from the <code>framework://</code> scheme and present the
+content directly to the native operating webview. We will load the Blazor JavaScript
+file from the following location:</p>
+<p><code>framework://blazor.desktop.js</code></p>
+<p>Change the index.html file inside the wwwroot folder of the iOS Project to read:</p>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+    &lt;title&gt;BlazorWebViewTutorial.Client&lt;/title&gt;
+    &lt;base href=&quot;/&quot; /&gt;
+    &lt;!-- Add _content/BlazorWebViewTutorial.Shared below --&gt;
+    &lt;link href=&quot;_content/BlazorWebViewTutorial.Shared/css/bootstrap/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
+    &lt;link href=&quot;_content/BlazorWebViewTutorial.Shared/css/site.css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;app&gt;Loading...&lt;/app&gt;
+
+    &lt;div id=&quot;blazor-error-ui&quot;&gt;
+        An unhandled error has occurred.
+        &lt;a href=&quot;&quot; class=&quot;reload&quot;&gt;Reload&lt;/a&gt;
+        &lt;a class=&quot;dismiss&quot;&gt;🗙&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- change the script location --&gt;
+    &lt;script src=&quot;framework://blazor.desktop.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+<h2 id="prepare-the-main-storyboard-and-view-controller">Prepare the Main Storyboard and View Controller.</h2>
+<p>The iOS App has a single View Controller that is called ViewController. It consists of two
+parts:</p>
+<ul>
+<li>A Storyboard file called &quot;Main.storyboard&quot; inside the root folder
+of the iOS App project.</li>
+<li>The &quot;ViewController.cs&quot; file in the same root folder.</li>
+</ul>
+<p>We need to update the first to add the Blazor Web View to the Storyboard, then we
+update the second one to wire up the Blazor Web View to show our Blazor App.</p>
+<h3 id="add-the-blazorwebview-control">Add the BlazorWebView Control.</h3>
+<p>Open the &quot;Main.storyboard&quot; file by double clicking it. We need to add a Blazor Web View to
+the view inside, where the Blazor content will be rendered. Search for the Blazor Web View
+inside the toolbox and drag it to add it to the view:</p>
+<p><img src="../images/iostoolbox.png" alt="Toolbox"></p>
+<p>The Blazor Web View will appear in the middle of the View. Center align and fill the View
+using the dialog below:</p>
+<p><img src="../images/iosresize.png" alt="Center, Resize and Auto Size"></p>
+<p>Make sure you click all the Auto Size edges and inside to make sure that the View sizes with
+its parent. Finally give the Blazor Web View the name &quot;BlazorWebView&quot; using the Properties dialog below:</p>
+<p><img src="../images/iosname.png" alt="Give a name"></p>
+<p>We have added a View with the type <code>BlazorWebView.iOS.BlazorWebView</code>, that matches
+its parent in height and width, and we have given it the <code>BlazorWebView</code> Name. We will need
+that Name later to reference the View in the <code>ViewController.cs</code> file.
+Close the Designer and build the project, it should still build. The Designer will have created
+a BlazorWebView Outlet inside the <code>ViewController.Designer.cs</code> file.</p>
+<h3 id="wire-up-the-blazor-web-view">Wire up the Blazor Web View.</h3>
+<p>Open the <code>ViewController.cs</code> file in the Text Editor. First we need to add two namespaces
+<em>inside</em> the namespace of the file (to avoid naming conflicts) like so:</p>
+<pre><code class="lang-csharp">namespace BlazorWebViewTutorial.IosApp
+{
+    // add usings here
+    using BlazorWebView.iOS;
+    using BlazorWebView;
+</code></pre>
+<p>To be able to dispose of the BlazorWebViewHost we add a private field to the class:</p>
+<pre><code class="lang-csharp">    public partial class ViewController : UIViewController
+    {
+        private IDisposable disposable;
+</code></pre>
+<p>Now, we are ready to use the BlazorWebView Outlet to initialize Blazor.
+We do this by adding the following statement to the <code>ViewDidLoad</code> method of the class:</p>
+<pre><code class="lang-csharp">            // run blazor.
+            this.disposable = BlazorWebViewHost.Run&lt;Startup&gt;(this.BlazorWebView, &quot;wwwroot/index.html&quot;);
+</code></pre>
+<p>The line will start Blazor. We'll take it apart step by step, to see what is going on:</p>
+<ul>
+<li>The result of the assignment is a Disposable instance that can be used to tear down and cleanup blazor. We should save it
+and call dispose when the View is unloaded.</li>
+<li>We start Blazor by calling the Run method on the <code>BlazorWebViewHost</code> static class. The run method takes a Generic type that
+specifies the Startup class that will initialize Blazor. We still use a Startup class, although Blazor WebAssembly has moved
+away from it. This might change in the future, but for now we keep the Startup class. We will define a Startup class in the
+next chapter.</li>
+<li>The first argument to the run method is the <code>IBlazorWebView</code> instance for the platform that we will use. In this case, it's
+the BlazorWebView instance that we got from the Outlet.</li>
+<li>The second argument is the relative path to the <code>index.html</code> resource inside the project. It usually is index.html and it has
+to be the <code>wwwroot</code> folder. The wwwroot folder is copied from the Resources folder to the Bundle on build.</li>
+</ul>
+<p>We have to make sure that we clean up nicely when the Parent View is destroyed, so we add the following line to the <code>DidReceiveMemoryWarning</code> method inside the <code>ViewController.cs</code> file:
+class:</p>
+<pre><code class="lang-csharp">        public override void DidReceiveMemoryWarning()
+        {
+            if (this.disposable != null)
+            {
+                this.disposable.Dispose();
+                this.disposable = null;
+            }
+
+            base.DidReceiveMemoryWarning();
+        }
+</code></pre>
+<p>After we have done this the final version of the <code>ViewController.cs</code> should look like this:</p>
+<pre><code class="lang-csharp">using Foundation;
+using System;
+using UIKit;
+
+namespace BlazorWebViewTutorial.IosApp
+{
+    // add usings here
+    using BlazorWebView.iOS;
+    using BlazorWebView;
+
+    public partial class ViewController : UIViewController
+    {
+        private IDisposable disposable;
+
+        public ViewController(IntPtr handle) : base(handle)
+        {
+        }
+
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+
+            // run blazor.
+            this.disposable = BlazorWebViewHost.Run&lt;Startup&gt;(this.BlazorWebView, &quot;wwwroot/index.html&quot;);
+        }
+
+        public override void DidReceiveMemoryWarning()
+        {
+            if (this.disposable != null)
+            {
+                this.disposable.Dispose();
+                this.disposable = null;
+            }
+
+            base.DidReceiveMemoryWarning();
+        }
+    }
+}
+</code></pre>
+<p>Well done, you've implemented the ViewController, so we can move on to the final bit of this tutorial, which
+is implementing the <code>Startup</code> class.</p>
+<h2 id="implement-the-startup-class">Implement the Startup Class.</h2>
+<p>We have to wire up the Blazor Dependency Injection and define the root App class for Blazor to be able to run.
+This Startup class closely resembles the AspnetCore default startup class for a web application.
+We could define it in the Shared RCL Project, but as it most likely will contain DI registrations specific to
+the platform, a better place is the iOS Project. Let's add the following class to the iOS Project:</p>
+<pre><code class="lang-csharp">using System.Net.Http;
+
+using BlazorWebView;
+using BlazorWebViewTutorial.Shared;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace BlazorWebViewTutorial.IosApp
+{
+    public class Startup
+    {
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddScoped&lt;HttpClient&gt;();
+        }
+
+        /// &lt;summary&gt;
+        /// Configure the app.
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;app&quot;&gt;The application builder for apps.&lt;/param&gt;
+        public void Configure(ApplicationBuilder app)
+        {
+            app.AddComponent&lt;App&gt;(&quot;app&quot;);
+        }
+    }
+}
+</code></pre>
+<p>The startup class has two methods. The first method configures the services
+for the DI container. We add an <code>HttpClient</code> from System.Net.Http as the
+iOS Platform does not come with a built-in one.</p>
+<p>The second method is the configuration for the platform. The method accepts
+an <code>ApplicationBuilder</code> that can be used to add the root component for the
+app.</p>
+<p>Press Cmd+Enter to build and run the project. You should be greeted by a familiar
+Blazor application:</p>
+<p><img src="../images/iosemulator.png" alt="iOS emulator"></p>
+<h2 id="fix-the-last-runtime-issue">Fix the Last Runtime Issue.</h2>
+<p>When you navigate to the <code>Fetch-Data</code> Page, you'll notice that the data is no
+longer shown. The data is included inside the iOS APK, but the <code>HttpClient</code>
+that we have added to the DI container is outside of the Browser and won't be
+intercepted by the BlazorWebView. Let's get the data from Github directly
+to solve this issue. Change the <code>Oninitialized</code> method inside <code>FetchData.Razor</code>
+component in the shared RCL project to read:</p>
+<pre><code class="lang-csharp">    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await Http.GetFromJsonAsync&lt;WeatherForecast[]&gt;(&quot;https://raw.githack.com/jspuij/BlazorWebViewTutorial/master/BlazorWebViewTutorial.Shared/wwwroot/sample-data/weather.json&quot;);
+    }
+</code></pre>
+<p>The iOS App should now be fully functioning. The source for the iOS App
+is in this branch:</p>
+<p><a href="https://github.com/jspuij/BlazorWebViewTutorial/tree/2_ios">https://github.com/jspuij/BlazorWebViewTutorial/tree/2_ios</a></p>
 </article>
           </div>
           

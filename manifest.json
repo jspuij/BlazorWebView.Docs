@@ -38,6 +38,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/addiosproject1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/addiosproject1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/addiosproject2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/addiosproject2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/addiosproject3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/addiosproject3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/addnewproject1.png",
       "output": {
         "resource": {
@@ -159,6 +192,61 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/iosautosize.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/iosautosize.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/iosemulator.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/iosemulator.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/iosname.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/iosname.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/iosproject.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/iosproject.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/iostoolbox.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/iostoolbox.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/newproject1.png",
       "output": {
         "resource": {
@@ -261,12 +349,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "pages/iostutorial.md",
       "output": {
         ".html": {
           "relative_path": "pages/iostutorial.html",
-          "hash": "ZZaIk1RZHOBbrxmQvCDnJw=="
+          "hash": "jM5L/NNrB9yI7rtD1x0nIg=="
         }
       },
       "is_incremental": false,
