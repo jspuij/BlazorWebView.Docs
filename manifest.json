@@ -280,6 +280,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/macaddoutlet.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/macaddoutlet.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/macapp.png",
       "output": {
         "resource": {
@@ -306,17 +317,6 @@
       "output": {
         "resource": {
           "relative_path": "images/macdragoutlet.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/macnameoutlet.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/macnameoutlet.png"
         }
       },
       "is_incremental": false,
@@ -471,9 +471,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "pages/mactutorial.md",
       "output": {
