@@ -71,6 +71,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/addmacproject1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/addmacproject1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/addmacproject2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/addmacproject2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/addmacproject3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/addmacproject3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/addnewproject1.png",
       "output": {
         "resource": {
@@ -247,6 +280,83 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/macapp.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/macapp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/macautosize.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/macautosize.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/macdragoutlet.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/macdragoutlet.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/macnameoutlet.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/macnameoutlet.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/macproject.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/macproject.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mactoolbox.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mactoolbox.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/mactypeview.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/mactypeview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/newproject1.png",
       "output": {
         "resource": {
@@ -361,12 +471,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "pages/mactutorial.md",
       "output": {
         ".html": {
           "relative_path": "pages/mactutorial.html",
-          "hash": "UQnrd7hGzSQYaXJuFSB8QA=="
+          "hash": "q1Fni2pvFD1T530jDoG7WA=="
         }
       },
       "is_incremental": false,
