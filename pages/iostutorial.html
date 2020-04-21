@@ -124,6 +124,8 @@ and subsequently click <code>Project</code> in the top menu and then <code>Manag
 <p>Check <code>Show pre-release packages</code> and search for <code>BlazorWebView.iOS</code>. Add it to the project.
 This should install the package. We need an <code>HttpClient</code> for this platform,
 so we install <code>System.Net.Http</code> from NuGet as well.</p>
+<p>The mono linker might be overly optimistic in optimizing some references away, so in addition to the Shared RCL Project, we will also add the <code>System.Net.Http.Json</code> NuGet to the iOS project.
+This will prevent a linker error when we run the application in the end.</p>
 <p>Optionally you can update the Xamarin.Essentials NuGet package in the project, because
 the default template comes with a very old version. Rebuild the project,
 there should be no build errors.</p>
@@ -346,7 +348,7 @@ component in the shared RCL project to read:</p>
 </code></pre>
 <p>The iOS App should now be fully functioning. The source for the iOS App
 is in this branch:</p>
-<p><a href="https://github.com/jspuij/BlazorWebViewTutorial/tree/2_ios">https://github.com/jspuij/BlazorWebViewTutorial/tree/2_ios</a></p>
+<p><a href="https://github.com/jspuij/BlazorWebViewTutorial/tree/3_ios">https://github.com/jspuij/BlazorWebViewTutorial/tree/3_ios</a></p>
 </article>
           </div>
           
