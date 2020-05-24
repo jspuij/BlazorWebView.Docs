@@ -986,6 +986,25 @@ references:
   isSpec: "True"
   fullName: BlazorWebView.Wpf.BlazorNewEdgeWebView.ShowMessage
   nameWithType: BlazorNewEdgeWebView.ShowMessage
+- uid: BlazorWebView.Wpf.BlazorNewEdgeWebView.UserDataFolder
+  name: UserDataFolder
+  href: ref/BlazorWebView.Wpf.BlazorNewEdgeWebView.html#BlazorWebView_Wpf_BlazorNewEdgeWebView_UserDataFolder
+  commentId: P:BlazorWebView.Wpf.BlazorNewEdgeWebView.UserDataFolder
+  fullName: BlazorWebView.Wpf.BlazorNewEdgeWebView.UserDataFolder
+  nameWithType: BlazorNewEdgeWebView.UserDataFolder
+- uid: BlazorWebView.Wpf.BlazorNewEdgeWebView.UserDataFolder*
+  name: UserDataFolder
+  href: ref/BlazorWebView.Wpf.BlazorNewEdgeWebView.html#BlazorWebView_Wpf_BlazorNewEdgeWebView_UserDataFolder_
+  commentId: Overload:BlazorWebView.Wpf.BlazorNewEdgeWebView.UserDataFolder
+  isSpec: "True"
+  fullName: BlazorWebView.Wpf.BlazorNewEdgeWebView.UserDataFolder
+  nameWithType: BlazorNewEdgeWebView.UserDataFolder
+- uid: BlazorWebView.Wpf.BlazorNewEdgeWebView.UserDataFolderProperty
+  name: UserDataFolderProperty
+  href: ref/BlazorWebView.Wpf.BlazorNewEdgeWebView.html#BlazorWebView_Wpf_BlazorNewEdgeWebView_UserDataFolderProperty
+  commentId: F:BlazorWebView.Wpf.BlazorNewEdgeWebView.UserDataFolderProperty
+  fullName: BlazorWebView.Wpf.BlazorNewEdgeWebView.UserDataFolderProperty
+  nameWithType: BlazorNewEdgeWebView.UserDataFolderProperty
 - uid: BlazorWebView.Wpf.BlazorOldEdgeWebView
   name: BlazorOldEdgeWebView
   href: ref/BlazorWebView.Wpf.BlazorOldEdgeWebView.html
@@ -1140,6 +1159,19 @@ references:
   isSpec: "True"
   fullName: BlazorWebView.Wpf.BlazorWebView.NavigateToUrl
   nameWithType: BlazorWebView.NavigateToUrl
+- uid: BlazorWebView.Wpf.BlazorWebView.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)
+  name: OnPropertyChanged(DependencyPropertyChangedEventArgs)
+  href: ref/BlazorWebView.Wpf.BlazorWebView.html#BlazorWebView_Wpf_BlazorWebView_OnPropertyChanged_System_Windows_DependencyPropertyChangedEventArgs_
+  commentId: M:BlazorWebView.Wpf.BlazorWebView.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)
+  fullName: BlazorWebView.Wpf.BlazorWebView.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)
+  nameWithType: BlazorWebView.OnPropertyChanged(DependencyPropertyChangedEventArgs)
+- uid: BlazorWebView.Wpf.BlazorWebView.OnPropertyChanged*
+  name: OnPropertyChanged
+  href: ref/BlazorWebView.Wpf.BlazorWebView.html#BlazorWebView_Wpf_BlazorWebView_OnPropertyChanged_
+  commentId: Overload:BlazorWebView.Wpf.BlazorWebView.OnPropertyChanged
+  isSpec: "True"
+  fullName: BlazorWebView.Wpf.BlazorWebView.OnPropertyChanged
+  nameWithType: BlazorWebView.OnPropertyChanged
 - uid: BlazorWebView.Wpf.BlazorWebView.OnWebMessageReceived
   name: OnWebMessageReceived
   href: ref/BlazorWebView.Wpf.BlazorWebView.html#BlazorWebView_Wpf_BlazorWebView_OnWebMessageReceived
@@ -1172,3 +1204,22 @@ references:
   isSpec: "True"
   fullName: BlazorWebView.Wpf.BlazorWebView.ShowMessage
   nameWithType: BlazorWebView.ShowMessage
+- uid: BlazorWebView.Wpf.BlazorWebView.UserDataFolder
+  name: UserDataFolder
+  href: ref/BlazorWebView.Wpf.BlazorWebView.html#BlazorWebView_Wpf_BlazorWebView_UserDataFolder
+  commentId: P:BlazorWebView.Wpf.BlazorWebView.UserDataFolder
+  fullName: BlazorWebView.Wpf.BlazorWebView.UserDataFolder
+  nameWithType: BlazorWebView.UserDataFolder
+- uid: BlazorWebView.Wpf.BlazorWebView.UserDataFolder*
+  name: UserDataFolder
+  href: ref/BlazorWebView.Wpf.BlazorWebView.html#BlazorWebView_Wpf_BlazorWebView_UserDataFolder_
+  commentId: Overload:BlazorWebView.Wpf.BlazorWebView.UserDataFolder
+  isSpec: "True"
+  fullName: BlazorWebView.Wpf.BlazorWebView.UserDataFolder
+  nameWithType: BlazorWebView.UserDataFolder
+- uid: BlazorWebView.Wpf.BlazorWebView.UserDataFolderProperty
+  name: UserDataFolderProperty
+  href: ref/BlazorWebView.Wpf.BlazorWebView.html#BlazorWebView_Wpf_BlazorWebView_UserDataFolderProperty
+  commentId: F:BlazorWebView.Wpf.BlazorWebView.UserDataFolderProperty
+  fullName: BlazorWebView.Wpf.BlazorWebView.UserDataFolderProperty
+  nameWithType: BlazorWebView.UserDataFolderProperty

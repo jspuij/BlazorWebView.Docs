@@ -8,7 +8,7 @@
     <title>BlazorWebView WPF Tutorial. </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="BlazorWebView WPF Tutorial. ">
-    <meta name="generator" content="docfx 2.52.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -229,6 +229,10 @@ create a property with that name on the <code>MainWindow</code> class.</p>
 <p>The BlazorWebView Control first tries to start the new Edge (Chromium based) Edge. If it's not encountered
 the BlazorWebView Control will fall back to the old Edge control. If this is not desired you can use the
 <code>BlazorNewEdgeWebView</code> and <code>BlazorOldEdgeWebView</code> Controls respectively.</p>
+</blockquote>
+<blockquote>
+<p>The BlazorNewEdgeWebView and BlazorWebView have an optional <code>UserDataFolder</code> property that you can set
+to point to a folder where Edgium should store its data. The default folder is <code>%APPDATA%\Local\&lt;EntryAssemblyName&gt;\WebView2\</code>.</p>
 </blockquote>
 <p>We have also added two event handlers to the Window class:</p>
 <ul>
