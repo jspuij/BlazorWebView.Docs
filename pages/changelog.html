@@ -8,7 +8,7 @@
     <title>Changelog </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Changelog ">
-    <meta name="generator" content="docfx 2.54.0.0">
+    <meta name="generator" content="docfx 2.55.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -70,6 +70,12 @@
 <h1 id="changelog">Changelog</h1>
 
 <p>The following versions have been released:</p>
+<h2 id="020">0.2.0</h2>
+<ul>
+<li>Fixed a possible race condition where initialization of the IPC and Runtime would take more time that the load and execution
+of the web page. So we delay the load of the web page until IPC is ready.</li>
+<li>Dropped preview designation as Blazor (webassembly) is now out of preview.</li>
+</ul>
 <h2 id="020-preview9">0.2.0-preview9</h2>
 <ul>
 <li>Fixed a bug where the WebJS project was tracking the 5.0.0 beta Blazor JavaScript sources.
