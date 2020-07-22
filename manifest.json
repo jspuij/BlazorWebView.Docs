@@ -416,7 +416,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "819rN6f+mqA93m6w6I9edQ=="
+          "hash": "UEMuu4LB/8cfXmHDd2ol2w=="
         }
       },
       "is_incremental": false,
@@ -428,7 +428,7 @@
       "output": {
         ".html": {
           "relative_path": "pages/androidtutorial.html",
-          "hash": "tfDpT3wV3a+BloI54Sw2Pw=="
+          "hash": "+OCcG6sNRHJIMEVfml/KVQ=="
         }
       },
       "is_incremental": false,
@@ -440,7 +440,7 @@
       "output": {
         ".html": {
           "relative_path": "pages/changelog.html",
-          "hash": "P0r+dN06Gzqe8gPxMZUyOw=="
+          "hash": "SePdIe2UlyAAx+KXLthPcQ=="
         }
       },
       "is_incremental": false,
@@ -452,7 +452,7 @@
       "output": {
         ".html": {
           "relative_path": "pages/index.html",
-          "hash": "t9X75WxVEgWjF3wLbcDPQg=="
+          "hash": "PDX9hEdoVzSeAGpJpHg4sg=="
         }
       },
       "is_incremental": false,
@@ -464,7 +464,7 @@
       "output": {
         ".html": {
           "relative_path": "pages/iostutorial.html",
-          "hash": "kMWDmPtA1fQHs7PC/7yRmQ=="
+          "hash": "rwXxs0p919bgpKjEeY2D5A=="
         }
       },
       "is_incremental": false,
@@ -476,7 +476,7 @@
       "output": {
         ".html": {
           "relative_path": "pages/mactutorial.html",
-          "hash": "LUXNYX8ahbIi6yip4eU3DA=="
+          "hash": "EGDfHSlaALW/NI1P1QDIJw=="
         }
       },
       "is_incremental": false,
@@ -488,7 +488,7 @@
       "output": {
         ".html": {
           "relative_path": "pages/prepare.html",
-          "hash": "NX9ZPy2iIxoOfDH8ucXDng=="
+          "hash": "wkb+ikDz9VHEJDyZ2hA9tw=="
         }
       },
       "is_incremental": false,
@@ -512,7 +512,7 @@
       "output": {
         ".html": {
           "relative_path": "pages/wpftutorial.html",
-          "hash": "zsbkt5aH0SfzGQgPLIh8gQ=="
+          "hash": "1QCt2y6zwsBTZhuK+zmtJg=="
         }
       },
       "is_incremental": false,
@@ -524,7 +524,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Android.AndroidAssetResolver.html",
-          "hash": "IctVVkZ+k347/Zm03+1QRw=="
+          "hash": "vd5MRsH3LNxX5KD6E7z4QQ=="
         }
       },
       "is_incremental": false,
@@ -536,7 +536,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Android.BlazorJavascriptInterface.html",
-          "hash": "xoS/4DLsTKqBiPeTC7LTwg=="
+          "hash": "HKqNF5QINnPERh+E/3/Epg=="
         }
       },
       "is_incremental": false,
@@ -548,7 +548,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Android.BlazorWebView.html",
-          "hash": "+NUcoPMpWwKFqH4XS8WJvw=="
+          "hash": "1fDXgfqYsiY5mGPJKV5mMw=="
         }
       },
       "is_incremental": false,
@@ -560,7 +560,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Android.BlazorWebViewClient.html",
-          "hash": "uEHu3/dmbabygCF9FCQxZA=="
+          "hash": "/McnhbhCkyDajja1cIVntw=="
         }
       },
       "is_incremental": false,
@@ -572,7 +572,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Android.Resource.Attribute.html",
-          "hash": "bTkNhlbvxMANJfKPwX//oQ=="
+          "hash": "/ri3Tpxg5Brw+wACTKfX/A=="
         }
       },
       "is_incremental": false,
@@ -584,7 +584,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Android.Resource.Id.html",
-          "hash": "AFaYce7usTUoMe6l6xIkbA=="
+          "hash": "rX4oB/MEIMet2PFft4XxhA=="
         }
       },
       "is_incremental": false,
@@ -596,7 +596,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Android.Resource.Layout.html",
-          "hash": "52eKFzMVlPNFMcmDbzuAjA=="
+          "hash": "q3ebJ8AMzexwUo0EYtReqw=="
         }
       },
       "is_incremental": false,
@@ -608,7 +608,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Android.Resource.String.html",
-          "hash": "vxgqljLxHd3jDKjtI3sxNA=="
+          "hash": "c80B/YnOj4tD8nwcYiA/0w=="
         }
       },
       "is_incremental": false,
@@ -620,7 +620,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Android.Resource.html",
-          "hash": "UvwCjnw1e8kWSk6RzDYDSw=="
+          "hash": "Q/BTxZPUsLvONAEPAGyV6A=="
         }
       },
       "is_incremental": false,
@@ -632,7 +632,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Android.html",
-          "hash": "cP+p/qIZsCwLL6ZwYp3bJg=="
+          "hash": "mfLv/D0ZW83W42b4FE1PNw=="
         }
       },
       "is_incremental": false,
@@ -644,7 +644,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.ApplicationBuilder.html",
-          "hash": "jHI5RMbm4geCT/B+I/rRaw=="
+          "hash": "4LRz+DIKURdpYWQ8XYctLw=="
         }
       },
       "is_incremental": false,
@@ -656,7 +656,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.BlazorWebViewHost.html",
-          "hash": "7gEnS2ArlGrnVs7qN/F+ag=="
+          "hash": "d4EEYRwJ4MrTIOn8mgMlcA=="
         }
       },
       "is_incremental": false,
@@ -668,7 +668,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.IBlazorWebView.html",
-          "hash": "oEGRgZy+hsbmgUw2G5SnAQ=="
+          "hash": "9dfxrNxvX2aS496D+uXwZg=="
         }
       },
       "is_incremental": false,
@@ -680,7 +680,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.JSInteropMethods.html",
-          "hash": "TAXzx/kWHBoPnJqGOiNkDA=="
+          "hash": "NLD7SuYVfF7nCN5fMQ3z6g=="
         }
       },
       "is_incremental": false,
@@ -692,7 +692,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Mac.BlazorWebView.html",
-          "hash": "HGrgVDmxjdgk9STQ9CbgUw=="
+          "hash": "eo8RwyGGYTWA/K92rVjTYQ=="
         }
       },
       "is_incremental": false,
@@ -704,7 +704,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Mac.UrlSchemeHandler.html",
-          "hash": "/gdhG/SP0Gw2UcaqH/tUGQ=="
+          "hash": "38y/jY4tFHrpLsU00e7FRg=="
         }
       },
       "is_incremental": false,
@@ -716,7 +716,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Mac.html",
-          "hash": "W76VkcpzizlPhnv4RhvSdA=="
+          "hash": "o33uTMRRcJN0pkCawqGh4A=="
         }
       },
       "is_incremental": false,
@@ -728,7 +728,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.ResolveWebResourceDelegate.html",
-          "hash": "vclEoOaMxlpH/6n0hYDolg=="
+          "hash": "62ImBFy4Y6+UmwS/IzIGmw=="
         }
       },
       "is_incremental": false,
@@ -740,7 +740,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.WebViewOptions.html",
-          "hash": "Gba0bcrzAyZh/IV1iEDKKA=="
+          "hash": "vpf3MDrRx4M36m/lhAsx+A=="
         }
       },
       "is_incremental": false,
@@ -752,7 +752,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Wpf.BlazorNewEdgeWebView.html",
-          "hash": "BldlR03lFJBMO8999sSGyg=="
+          "hash": "LSTlaI7N4D9ApFBEx6o1mg=="
         }
       },
       "is_incremental": false,
@@ -764,7 +764,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Wpf.BlazorOldEdgeWebView.html",
-          "hash": "n4Hb2Wp6+S4EHgLFzCveVw=="
+          "hash": "Tv4GYpKMx6XIpY6i5xRxOQ=="
         }
       },
       "is_incremental": false,
@@ -776,7 +776,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Wpf.BlazorWebView.html",
-          "hash": "NgbWt1t9YxsyXp3TLbH+Nw=="
+          "hash": "ET8DneMtELj0bZZYtuOZXg=="
         }
       },
       "is_incremental": false,
@@ -788,7 +788,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.Wpf.html",
-          "hash": "Pjs0BTj4zMVyw7JGntzVJw=="
+          "hash": "wdrAd8G4MmGC+Y5KoOj9pw=="
         }
       },
       "is_incremental": false,
@@ -800,7 +800,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.iOS.BlazorWebView.html",
-          "hash": "hAYFoZdwcAUmlo2SCx/H3w=="
+          "hash": "VZ/+hhqfak1CvjMhrrR1RA=="
         }
       },
       "is_incremental": false,
@@ -812,7 +812,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.iOS.UrlSchemeHandler.html",
-          "hash": "RaJy3K/ReaXFGy34FwtTXQ=="
+          "hash": "Rvu8ywmY+JErPtXdtdt76g=="
         }
       },
       "is_incremental": false,
@@ -824,7 +824,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.iOS.html",
-          "hash": "bB85GoZg3lL+bk54Oc6gcA=="
+          "hash": "i/cNulzxLWTIPDXvLbZBUQ=="
         }
       },
       "is_incremental": false,
@@ -836,7 +836,7 @@
       "output": {
         ".html": {
           "relative_path": "ref/BlazorWebView.html",
-          "hash": "TCLp2b+liSamsyUAO0DnEg=="
+          "hash": "rZCBRPgoB6Hunwvj/jZFbg=="
         }
       },
       "is_incremental": false,
